@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import LoadingSpinner from '../components/loading-spinner';
 import Modal from '../components/Modal';  // Import the Modal component
-import { BASE_API_URL } from '@/lib/utils';
+import { BASE_API_URL } from '@/app/lib/utils';
 import Image from 'next/image';
 
 const Table = () => {

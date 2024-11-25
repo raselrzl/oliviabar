@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import AddItem from './AddItem';
 import Table from './Table';
 import ContactMessages from './contactMessages';
-import { BASE_API_URL } from '@/lib/utils';
+import { BASE_API_URL } from '@/app/lib/utils';
 import NotificationForm from './notification';
 
 const Login = dynamic(() => import('../user/Login'), { ssr: false });

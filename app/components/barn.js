@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import LoadingSpinner from "./loading-spinner";
-import { BASE_API_URL } from "@/lib/utils";
+import { BASE_API_URL } from "@/app/lib/utils";
 import Image from "next/image";
 
 export default function Drinks() {

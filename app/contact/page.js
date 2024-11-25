@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Footer } from "../components/Footer";
-import { BASE_API_URL } from "@/lib/utils";
+import { BASE_API_URL } from "@/app/lib/utils";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

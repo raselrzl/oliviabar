@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BASE_API_URL } from '@/lib/utils';
+import { BASE_API_URL } from '@/app/lib/utils';
 
 const Register = ({ onRegisterSuccess }) => {
   const [name, setName] = useState('');

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import LoadingSpinner from './loading-spinner';
-import { BASE_API_URL } from '@/lib/utils';
+import { BASE_API_URL } from '@/app/lib/utils';
 
 export default function Deserts() {
   const [deserts, setDeserts] = useState([]);
