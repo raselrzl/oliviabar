@@ -2,20 +2,255 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Full-screen Spinner Styles */
+.fixed-spinner {
+  @apply fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EAC6B5; 
+  /* background-color: #000; */
+  color: #000; /* Black text for contrast */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Or your preferred font */
+}
+
+
+/* Ring Spinner */
+.ring-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring-spinner div {
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Light background */
+  border-top: 4px solid #777a0b; /* Spinner color */
+  border-radius: 50%;
+  width: 3rem; /* 48px */
+  height: 3rem; /* 48px */
+  animation: ring 1s linear infinite;
+}
+
+/* Custom spinner color */
+.spinner-custom {
+  border-top-color: #777a0b; /* Dark olive green */
+}
+
+/* Keyframes for ring spinner animation */
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ring Spinner Variants */
+.ring-spinner-sm {
+  width: 2rem; /* 32px */
+  height: 2rem; /* 32px */
+  border-width: 2px;
+  border-top-width: 2px;
+}
+
+.ring-spinner-md {
+  width: 3rem; /* 48px */
+  height: 3rem; /* 48px */
+  border-width: 4px;
+  border-top-width: 4px;
+}
+
+.ring-spinner-lg {
+  width: 4rem; /* 64px */
+  height: 4rem; /* 64px */
+  border-width: 4px;
+  border-top-width: 4px;
+}
+
+/* body {
+  background-color: #000; 
+} */
+
+/* Spinner styles */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1); /* Light background */
+  border-top: 4px solid #777a0b; /* Dark olive green spinner color */
+  border-radius: 50%;
+  width: 3rem; /* 12 x 0.25rem = 12 */
+  height: 3rem; /* 12 x 0.25rem = 12 */
+  animation: spin 1s linear infinite;
+}
+
+/* Additional spinner colors */
+.spinner-red {
+  border-top-color: rgb(255, 0, 0); /* Red */
+}
+
+.spinner-green {
+  border-top-color: rgb(0, 255, 0); /* Green */
+}
+
+.spinner-blue {
+  border-top-color: rgb(0, 0, 255); /* Blue */
+}
+
+.spinner-yellow {
+  border-top-color: rgb(255, 255, 0); /* Yellow */
+}
+
+.spinner-purple {
+  border-top-color: rgb(128, 0, 128); /* Purple */
+}
+
+.spinner-orange {
+  border-top-color: rgb(255, 165, 0); /* Orange */
+}
+
+.spinner-pink {
+  border-top-color: rgb(255, 105, 180); /* Hot pink */
+}
+
+/* Spinner sizes */
+.spinner-sm {
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+  border-width: 2px;
+  border-top-width: 2px;
+}
+
+.spinner-md {
+  width: 3rem; /* 48px */
+  height: 3rem; /* 48px */
+  border-width: 4px;
+  border-top-width: 4px;
+}
+
+.spinner-lg {
+  width: 4rem; /* 64px */
+  height: 4rem; /* 64px */
+  border-width: 4px;
+  border-top-width: 4px;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Primary Color */
+.border-t-primary {
+  border-top-color: #3498db; /* You can replace this with your primary color */
+}
+
+
+
+/* styles/globals.css or any other global stylesheet */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+
+/* Custom styles in your global CSS file (e.g., globals.css) */
+.button-clicked {
+  transform: scale(0.98);
+  background-color: #cc8400; /* Darker shade of your primary color */
+}
+
+
+.hexagon-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hexagon {
+  width: calc(13% - 1%);
+  padding-bottom: 15%;
+  position: relative;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  margin: 0.5%;
+  background: #333;
+  transition: transform 0.1s;
+  animation: moveRightToLeft 30s linear infinite;
+}
+
+.hexagon:nth-child(odd) {
+  margin-top: calc(-7.5%);
+}
+
+.hexagon:hover {
+  transform: scale(1.1);
+}
+
+.hexagon-inset {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  clip-path: inherit;
+}
+
+@media (max-width: 768px) {
+  .hexagon {
+    width: calc(20% - 1%);
+    padding-bottom: 23%;
+  }
+
+  .hexagon:nth-child(odd) {
+    margin-top: calc(-11.5%);
+  }
+}
+
+@media (max-width: 480px) {
+  .hexagon {
+    width: calc(30% - 1%);
+    padding-bottom: 35%;
+  }
+
+  .hexagon:nth-child(odd) {
+    margin-top: calc(-17.5%);
+  }
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.1% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
