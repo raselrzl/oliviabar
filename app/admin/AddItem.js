@@ -79,14 +79,14 @@ export default function AddItem(){
                             Förätter
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Burgers' ? 'bg-gray-400' : 'bg-black'}`}
-                            onClick={() => handleCategoryClick('Burgers')}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Varmrätter' ? 'bg-gray-400' : 'bg-black'}`}
+                            onClick={() => handleCategoryClick('Varmrätter')}
                         >
                             Varmrätter
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Extras' ? 'bg-gray-400' : 'bg-black'}`}
-                            onClick={() => handleCategoryClick('Extras')}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Sallad' ? 'bg-gray-400' : 'bg-black'}`}
+                            onClick={() => handleCategoryClick('Sallad')}
                         >
                             Sallad
                         </button>

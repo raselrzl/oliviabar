@@ -147,7 +147,7 @@ export const menuItems = [
       ],
     },
     {
-      category: 'Extras',
+      category: 'Sallad',
       items: [
         {
           title: 'Make it Menu',

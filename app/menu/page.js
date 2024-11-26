@@ -3,9 +3,9 @@ import { useState, lazy, Suspense } from "react";
 import { Footer } from "../components/Footer";
 import LoadingSpinner from "../components/loading-spinner";
 
-const Burgers = lazy(() => import("../components/varm"));
+const Varmrätter = lazy(() => import("../components/varm"));
 const Deserts = lazy(() => import("../components/deserts"));
-const Extras = lazy(() => import("../components/sallad"));
+const Sallad = lazy(() => import("../components/sallad"));
 const Förätter = lazy(() => import("../components/for"));
 const Drinks = lazy(() => import("../components/barn"));
 
@@ -35,16 +35,16 @@ export default function Menu() {
               Förätter
             </button>
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Burgers" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
-              onClick={() => handleCategoryChange("Burgers")}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Varmrätter" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              onClick={() => handleCategoryChange("Varmrätter")}
             >
               Varmrätter
             </button>
           </div>
           <div className="flex flex-row">
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Extras" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
-              onClick={() => handleCategoryChange("Extras")}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Sallad" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              onClick={() => handleCategoryChange("Sallad")}
             >
               Sallad
             </button>
@@ -82,26 +82,26 @@ export default function Menu() {
               <div className="flex justify-center">
                 <button
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
-                  onClick={() => handleCategoryChange("Burgers")}
+                  onClick={() => handleCategoryChange("Varmrätter")}
                 >
                   Varmrätter
                 </button>
               </div>
 
               <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-                <Burgers />
+                <Varmrätter />
               </div>
               <div className="flex justify-center">
                 <button
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
-                  onClick={() => handleCategoryChange("Extras")}
+                  onClick={() => handleCategoryChange("Sallad")}
                 >
                   Sallad
                 </button>
               </div>
 
               <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-                <Extras />
+                <Sallad />
               </div>
 
               <div className="flex justify-center" id="Desert">
@@ -137,9 +137,9 @@ export default function Menu() {
             </div>
           )}
 
-          {selectedCategory === "Burgers" && (
+          {selectedCategory === "Varmrätter" && (
             <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-              <Burgers />
+              <Varmrätter />
             </div>
           )}
 
@@ -154,9 +154,9 @@ export default function Menu() {
               <Drinks />
             </div>
           )}
-          {selectedCategory === "Extras" && (
+          {selectedCategory === "Sallad" && (
             <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-              <Extras />
+              <Sallad />
             </div>
           )}
         </Suspense>
