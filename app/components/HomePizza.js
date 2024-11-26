@@ -10,18 +10,23 @@ export default function HomePizza() {
       {/* //bg-[#EAC6B5] */}
       <div>
         <div>
-          <h1 className="mb-4 text-center text-2xl font-bold uppercase text-black">
-            Welcome to <span className="">Olivia&apos;S! </span>{" "}
+          <h1 className="mb-4 text-center text-xl font-bold uppercase text-black">
+            Välkommen till <span className="">Olivia&apos;S Bar</span> – där
+            smaker möts och magi skapas!
           </h1>
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-xs uppercase text-black shadow-2xl">
             <p className="">
-              Unna dig våra oemotståndliga hamburgare, tillagade med saftigt
-              premiumkött, färska grönsaker och signatursåser för en
-              smakupplevelse utöver det vanliga. Njut av perfekt grillade
-              stekar, möra och kryddade för ren lyx. Få en smak av Italien med
-              äkta pasta i rika såser, eller fräscha upp med färgsprakande
-              sallader fyllda med krispiga grönsaker och hemlagade dressingar.
-              Varje rätt är ett mästerverk för dina smaklökar!
+              På Olivia’s Bar handlar det inte bara om mat och dryck – det
+              handlar om en upplevelse där allt går hand i hand. Vår meny är
+              noggrant utformad för att lyfta fram det bästa ur både våra rätter
+              och våra cocktails. Med inspiration från världens kök och en
+              passion för smak, kombinerar vi utsökta måltider med innovativa,
+              handgjorda drinkar. Låt dig förföras av vår signaturcocktail,
+              skapad för att harmoniera perfekt med vår mest populära rätt.
+              Oavsett om du söker en romantisk middag, en härlig kväll med
+              vänner eller bara något riktigt gott att njuta av – Olivia’s Bar
+              är platsen där alla smaker möts. Kom och upplev smakresan hos oss.
+              Olivia’s Bar – där mat och cocktails förenas i perfekt harmoni.
             </p>
           </div>
           <div className="mt-10 flex items-center justify-center gap-4 text-sm">
@@ -63,17 +68,17 @@ export default function HomePizza() {
           SmashBite: Bite into <span className="text-black"> Burger </span>{" "}
           Bliss with Every Smash!
         </h1> */}
-        <p className="my-6 mb-6 text-center text-sm text-amber-100"></p>
+        {/* <p className="my-6 mb-6 text-center text-sm text-amber-100"></p>
 
-        <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-lg">
+        <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-xs uppercase text-black shadow-lg">
           <p className="">
-            Experience burger bliss like never before with our smash burgers.
-            Every bite bursts with juicy perfection, the result of our
-            meticulous smashing technique. Topped with fresh ingredients and
-            nestled between toasted buns, each burger promises a mouthwatering
-            journey through layers of flavor and satisfaction.
+            Upplev burgarens ultimata njutning som aldrig förr med våra
+            smashburgare. Varje tugga spricker av saftig perfektion, resultatet
+            av vår noggranna smash-teknik. Toppade med färska ingredienser och
+            serverade mellan rostade bröd, lovar varje burgare en smakupplevelse
+            fylld av lager på lager av smak och tillfredsställelse.
           </p>
-        </div>
+        </div> */}
 
         <div className="mb-10 mt-10 flex items-center justify-center gap-4 text-sm">
           <button className="flex items-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]">
@@ -87,7 +92,7 @@ export default function HomePizza() {
       </div>
 
       <div className="mt-10 flex items-center justify-center gap-4 text-sm">
-       {/*  <Link
+        {/*  <Link
           href="/menu"
           className="flex items-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
         >

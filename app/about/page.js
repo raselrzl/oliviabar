@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { FaInstagramSquare } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
+import { SlMusicTone } from "react-icons/sl";
 
 export default function AboutPage() {
   /*  useEffect(() => {
@@ -48,24 +49,21 @@ export default function AboutPage() {
                         /> */}
             <div className="">
               <h1 className="mb-4 text-3xl font-bold uppercase text-black">
-                Welcome to OLIVIA&apos;S
+                Om oss – Olivia’s Bar
               </h1>
-              <p className="text-md text-center text-black lg:px-40">
-                Välkommen till Olivia Bar – Norrköpings pulserande mötesplats
-                där trender föds och vänner möts! Här bjuder vi på en atmosfär
-                fylld av energi, god mat och unika cocktails som garanterat
-                förhöjer din kväll. Kom in, koppla av och låt våra skickliga
-                bartenders skapa drinkar som är lika kreativa som de är
-                smakrika. Hos oss är varje dag/kväll speciell, och med
-                öppettider till sent flera dagar i veckan har du alltid en plats
-                att njuta, och möta nya ansikten. Vår uteservering blir en
-                självklar favorit under de varmare månaderna, där du kan njuta
-                av en drink i sällskap av stadens liv och rörelse. Olivia Bar är
-                mer än bara en bar – det är en plats där du skapar minnen.
-                Oavsett om du är ute efter en kväll med vänner, att fira något
-                speciellt eller bara vill uppleva Norrköpings krog-liv när det
-                är som bäst, är vi redo att välkomna dig! OLIVIA BAR Mat &
-                Cocktails{" "}
+              <p className="text-sm text-center text-black lg:px-40">
+                På Olivia’s Bar brinner vi för att skapa en plats där mat, dryck
+                och gemenskap står i centrum. Här möts smaker från världens hörn
+                med en lokal touch, och varje rätt och cocktail är skapad med
+                omtanke och kreativitet. Vår vision är enkel – att ge dig en
+                upplevelse där varje tugga och varje sipp blir ett minnesvärt
+                ögonblick. Med en passion för kvalitet och en känsla för
+                detaljer strävar vi efter att överträffa dina förväntningar,
+                oavsett om du kommer för en avkopplande middag, en festlig kväll
+                eller en snabb drink i baren. Hos oss är maten och våra
+                cocktails mer än bara komplement – de berättar en historia.
+                Välkommen till Olivia’s Bar, där vi skapar smaker som binder oss
+                samman.{" "}
               </p>
             </div>
           </div>
@@ -83,11 +81,11 @@ export default function AboutPage() {
             />
             <div className="p-4 text-center md:ml-6 md:text-left">
               <h2 className="mb-4 text-2xl font-semibold uppercase text-black">
-                Our Story
+                Vår Historia
               </h2>
-              <p className="text-lg text-black">
-                Founded in 2024, OLIVIAS is a beloved spot for classic Special
-                food and drinks.
+              <p className="text-md text-black">
+                Grundat år 2024, är OLIVIAS en älskad plats för klassisk
+                specialmat och drycker.
               </p>
             </div>
           </div>
@@ -105,11 +103,11 @@ export default function AboutPage() {
             />
             <div className="p-4 text-center md:ml-6 md:text-left">
               <h2 className="mb-4 text-2xl font-semibold uppercase text-black">
-                Meet Our Team
+                Möt Vårt Team
               </h2>
-              <p className="text-lg text-black">
-                Led by Chef of OLIVIAS, our team serves up the best food
-                compared to any classic restaurant.
+              <p className="text-sm text-black">
+                Lett av kocken på OLIVIAS, serverar vårt team den bästa maten
+                jämfört med vilken klassisk restaurang som helst.
               </p>
             </div>
           </div>
@@ -121,12 +119,12 @@ export default function AboutPage() {
             <div className="flex w-full flex-col items-center md:flex-row">
               <div className="p-4 text-center md:ml-6 md:text-left">
                 <h2 className="mb-4 text-2xl font-semibold uppercase text-black">
-                  Our Philosophy
+                  Vår Filosofi
                 </h2>
-                <p className="text-lg text-black">
-                  We’re dedicated to perfecting the food, Our commitment to
-                  quality ingredients and traditional methods ensures every dish
-                  is exceptional.
+                <p className="text-sm text-black">
+                  Vi är dedikerade till att perfektionera maten. Vårt engagemang
+                  för kvalitetsingredienser och traditionella metoder
+                  säkerställer att varje rätt är exceptionell.
                 </p>
               </div>
             </div>
@@ -212,10 +210,10 @@ export default function AboutPage() {
             />
             <div className="p-4 text-center md:ml-6 md:text-left">
               <h2 className="mb-4 text-2xl font-semibold uppercase">
-                Community Engagement
+                Engagemang i Samhället
               </h2>
-              <p className="text-lg">
-                Proudly supporting local initiatives and events.
+              <p className="text-sm">
+                Stolt stödjer vi lokala initiativ och evenemang.
               </p>
             </div>
           </div>
@@ -223,33 +221,32 @@ export default function AboutPage() {
 
         {/* Testimonials Section */}
         <section className="">
-  <div className="py-6 text-center">
-    <h2 className="mb-4 text-2xl font-semibold uppercase text-black">
-      What Our Customers Say
-    </h2>
-    <div className="space-y-4">
-      <div className="relative mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
-        <p>
-          &apos;&apos;Best Burgers in town! The flavors are incredible, and the
-          service is always top-notch.&apos;&apos;
-        </p>
-        <span className="absolute bottom-2 right-4 text-xs italic">
-          - Sarah M
-        </span>
-      </div>
-      <div className="relative mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
-        <p>
-          &apos;&apos;Steak never disappoints. The burgers are amazing, and the
-          atmosphere is cozy.&apos;&apos;
-        </p>
-        <span className="absolute bottom-2 right-4 text-xs italic">
-          - John D
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
-
+          <div className="py-6 text-center">
+            <h2 className="mb-4 text-2xl font-semibold uppercase text-black">
+              Vad Våra Kunder Säger
+            </h2>
+            <div className="space-y-4">
+              <div className="relative mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+                <p>
+                  &apos;&apos;Bästa hamburgarna i staden! Smakerna är otroliga,
+                  och servicen är alltid i toppklass.&apos;&apos;
+                </p>
+                <span className="absolute bottom-2 right-4 text-xs italic">
+                  - Sarah M
+                </span>
+              </div>
+              <div className="relative mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+                <p>
+                  &apos;&apos;Biffen besvikar aldrig. Hamburgarna är
+                  fantastiska, och atmosfären är mysig.&apos;&apos;
+                </p>
+                <span className="absolute bottom-2 right-4 text-xs italic">
+                  - John D
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Map Section */}
         {/*  <section className="mb-12 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 overflow-hidden">
@@ -258,44 +255,109 @@ export default function AboutPage() {
                     </div>
                 </section> */}
       </div>
-      <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+
+      <section
+        className="mx-auto my-6 max-w-screen-lg bg-cover bg-center p-8 text-center text-sm uppercase text-black shadow-2xl"
+        style={{ backgroundImage: "url('/olivia/music.jpg')" }}
+        id="music"
+      >
+        {/* Top 10 Famous Songs Section */}
+        <div className="p-4 bg-opacity-50 bg-black rounded">
+          <h2 className="mb-4 text-xl font-semibold uppercase text-white flex items-center justify-center gap-2">
+            <img className="w-40 h-40" src="/olivia/gif3.gif" alt="music gif" />
+          </h2>
+          <ul className="flex flex-col items-center space-y-4 text-xs text-white">
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Bohemian Rhapsody" - Queen
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Shape of You" - Ed Sheeran
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Billie Jean" - Michael Jackson
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Imagine" - John Lennon
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Smells Like Teen Spirit" - Nirvana
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Hey Jude" - The Beatles
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Like a Rolling Stone" - Bob Dylan
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Hallelujah" - Leonard Cohen
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "I Will Always Love You" - Whitney Houston
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              "Rolling in the Deep" - Adele
+              <img className="w-6 h-6" src="/olivia/gif2.gif" alt="music gif" />
+            </li>
+            <li className="flex items-center gap-2 justify-center">
+              {/* <img className="w-6 h-6" src="/olivia/gif1.gif" alt="music gif" /> */}
+              And More......
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="info" className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
         {/* Opening Hours Section */}
         <div className="p-4 text-center">
           <h2 className="mb-4 text-xl font-semibold uppercase text-black">
-            Opening Hours
+            Öppettider
           </h2>
-          <p className="text-xs text-black">
-            Monday - Thursday: 3:00 PM - 10:00 PM
-          </p>
-          <p className="text-xs text-black">
-            Friday & Saturday: 3:00 PM - 01:00 AM
-          </p>
-          <p className="text-xs text-black">Sunday: 5:00 PM - 01:00 AM</p>
+          <p className="text-xs text-black">Måndag - Torsdag: 15:00 - 22:00</p>
+          <p className="text-xs text-black">Fredag & Lördag: 15:00 - 01:00</p>
+          <p className="text-xs text-black">Söndag: 17:00 - 01:00</p>
         </div>
 
         {/* Work With Us Section */}
         <div className="mt-6 p-4 text-center">
           <h2 className="mb-4 text-xl font-semibold uppercase text-black">
-            Work With Us
+            Jobba Med Oss
           </h2>
           <p className="mb-4 text-xs text-black">
-            To work with us, send your CV to our email and follow us on our
-            Instagram.
+            För att jobba med oss, skicka ditt CV till vår e-post och följ oss
+            på vår Instagram.
           </p>
+
           <div className="flex justify-center gap-4 text-3xl">
-            
-              <Link
-                href="https://www.instagram.com/oliviasbarnkpg?igsh=MWtkNDBoNDU3eGxoeg=="
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagramSquare className="hover:text-[#444444]" />
-              </Link>          
-           
-              <Link href="mailto:info@oliviasbar.se" >
-                <MdMarkEmailUnread className="hover:text-[#444444]" />
-              </Link>
-           
+            <Link
+              href="https://www.instagram.com/oliviasbarnkpg?igsh=MWtkNDBoNDU3eGxoeg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagramSquare className="hover:text-[#444444]" />
+            </Link>
+
+            <Link href="mailto:info@oliviasbar.se">
+              <MdMarkEmailUnread className="hover:text-[#444444]" />
+            </Link>
           </div>
         </div>
       </section>
