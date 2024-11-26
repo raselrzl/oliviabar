@@ -6,7 +6,7 @@ import LoadingSpinner from "../components/loading-spinner";
 const Burgers = lazy(() => import("../components/varm"));
 const Deserts = lazy(() => import("../components/deserts"));
 const Extras = lazy(() => import("../components/sallad"));
-const Pizzas = lazy(() => import("../components/for"));
+const Förätter = lazy(() => import("../components/for"));
 const Drinks = lazy(() => import("../components/barn"));
 
 export default function Menu() {
@@ -29,8 +29,8 @@ export default function Menu() {
               All
             </button>
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Pizzas" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
-              onClick={() => handleCategoryChange("Pizzas")}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Förätter" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              onClick={() => handleCategoryChange("Förätter")}
             >
               Förätter
             </button>
@@ -70,13 +70,13 @@ export default function Menu() {
               <div className="flex justify-center">
                 <button
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
-                  onClick={() => handleCategoryChange("Pizzas")}
+                  onClick={() => handleCategoryChange("Förätter")}
                 >
                   Förätter
                 </button>
               </div>
               <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-                <Pizzas />
+                <Förätter />
               </div>
 
               <div className="flex justify-center">
@@ -131,9 +131,9 @@ export default function Menu() {
             </>
           )}
 
-          {selectedCategory === "Pizzas" && (
+          {selectedCategory === "Förätter" && (
             <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-              <Pizzas />
+              <Förätter />
             </div>
           )}
 

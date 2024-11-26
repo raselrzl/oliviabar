@@ -58,7 +58,7 @@ export const menuItems = [
       ],
     },
     {
-      category: 'Pizzas',
+      category: 'Förätter',
       items: [
         {
           title: 'Margherita',

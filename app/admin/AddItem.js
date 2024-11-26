@@ -73,46 +73,46 @@ export default function AddItem(){
                     <div className="flex flex-wrap justify-center mb-6 gap-2 sm:gap-4">
                         {/* Category buttons */}
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Pizzas' ? 'bg-gray-700' : 'bg-black'}`}
-                            onClick={() => handleCategoryClick('Pizzas')}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Förätter' ? 'bg-gray-400' : 'bg-black'}`}
+                            onClick={() => handleCategoryClick('Förätter')}
                         >
-                            Pizza
+                            Förätter
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Burgers' ? 'bg-gray-700' : 'bg-black'}`}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Burgers' ? 'bg-gray-400' : 'bg-black'}`}
                             onClick={() => handleCategoryClick('Burgers')}
                         >
-                            Burger
+                            Varmrätter
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Extras' ? 'bg-gray-700' : 'bg-black'}`}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Extras' ? 'bg-gray-400' : 'bg-black'}`}
                             onClick={() => handleCategoryClick('Extras')}
                         >
-                            Extra
+                            Sallad
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Popular Pizzas' ? 'bg-gray-700' : 'bg-black'}`}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Popular Pizzas' ? 'bg-gray-400' : 'bg-black'}`}
                             onClick={() => handleCategoryClick('Popular Pizzas')}
                         >
                             Popular Pizzas
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Popular Burgers' ? 'bg-gray-700' : 'bg-black'}`}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Popular Burgers' ? 'bg-gray-400' : 'bg-black'}`}
                             onClick={() => handleCategoryClick('Popular Burgers')}
                         >
                             Popular Burgers
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Deserts' ? 'bg-gray-700' : 'bg-black'}`}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Deserts' ? 'bg-gray-400' : 'bg-black'}`}
                             onClick={() => handleCategoryClick('Deserts')}
                         >
                             Desert
                         </button>
                         <button
-                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Drinks' ? 'bg-gray-700' : 'bg-black'}`}
+                            className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${category === 'Drinks' ? 'bg-gray-400' : 'bg-black'}`}
                             onClick={() => handleCategoryClick('Drinks')}
                         >
-                            Drinks
+                            Barnmeny
                         </button>
                     </div>
                     <form className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl p-6 mb-12 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 overflow-hidden" onSubmit={handleSubmit}>
@@ -124,7 +124,7 @@ export default function AddItem(){
                         )}
 
                         <div className="mb-4">
-                            <label className="block text-sm sm:text-base md:text-lg font-medium text-primary" htmlFor="category">
+                            <label className="block text-sm sm:text-base md:text-lg font-medium text-white" htmlFor="category">
                                 Category
                             </label>
                             <input
@@ -138,7 +138,7 @@ export default function AddItem(){
                         </div>
 
                         <div className="mb-4">
-                            <label className="block text-sm sm:text-base md:text-lg font-medium text-primary" htmlFor="title">
+                            <label className="block text-sm sm:text-base md:text-lg font-medium text-white" htmlFor="title">
                                 Title
                             </label>
                             <input
@@ -152,7 +152,7 @@ export default function AddItem(){
                         </div>
 
                         <div className="mb-4">
-                            <label className="block text-sm sm:text-base md:text-lg font-medium text-primary" htmlFor="price">
+                            <label className="block text-sm sm:text-base md:text-lg font-medium text-white" htmlFor="price">
                                 Price
                             </label>
                             <input
@@ -167,7 +167,7 @@ export default function AddItem(){
 
                         {category !== 'Drinks' && category !== 'Deserts' && (
                             <div className="mb-4">
-                                <label className="block text-sm sm:text-base md:text-lg font-medium text-primary" htmlFor="description">
+                                <label className="block text-sm sm:text-base md:text-lg font-medium text-white" htmlFor="description">
                                     Description
                                 </label>
                                 <textarea
@@ -181,7 +181,7 @@ export default function AddItem(){
                         )}
 
                         <div className="mb-4">
-                            <label className="block text-sm sm:text-base md:text-lg font-medium text-primary" htmlFor="src">
+                            <label className="block text-sm sm:text-base md:text-lg font-medium text-white" htmlFor="src">
                                 Image Source (URL)
                             </label>
                             <input
@@ -196,7 +196,7 @@ export default function AddItem(){
 
                         <button
                             type="submit"
-                            className="w-full bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark focus:outline-none focus:shadow-outline"
+                            className="w-full bg-black text-white py-2 px-4 rounded hover:bg-gray-400 focus:outline-none focus:shadow-outline"
                         >
                             Add to {category}  {/* Changed button text to reflect the category */}
                         </button>
