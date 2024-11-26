@@ -66,7 +66,7 @@ export default function Varmrätter() {
         Varmrätter.map((Varmrätte, index) => (
           <div
             key={index} // Use index as the key since there's no unique ID
-            className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+            className="relative bg-[#F7DAD0] text-sm rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
           >
             {/* Price Button */}
             <button className="absolute top-4 right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
@@ -81,13 +81,13 @@ export default function Varmrätter() {
             />
 
             {/* Burger Title */}
-            <h4 className="font-semibold text-lg text-black mb-2">
+            <h4 className="font-semibold text-md text-black mb-2">
               {Varmrätte.title}
             </h4>
 
             {/* Description */}
-            <p className="text-sm text-gray-700">
-              {Varmrätte.description || "No description available"}
+            <p className="text-xs text-gray-700">
+              {Varmrätte.description || ""}
             </p>
           </div>
         ))

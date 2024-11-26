@@ -21,6 +21,27 @@ export default function Menu() {
   return (
     <div>
       <div className="pb-24">
+        <div className="p-8">
+          <h1 className="mb-4 text-center text-xl font-bold uppercase text-black">
+            Välkommen till <span className="">Olivia&apos;S Bar</span> – där
+            smaker möts och magi skapas!
+          </h1>
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-xs uppercase text-black shadow-2xl">
+            <p className="">
+              På Olivia’s Bar handlar det inte bara om mat och dryck – det
+              handlar om en upplevelse där allt går hand i hand. Vår meny är
+              noggrant utformad för att lyfta fram det bästa ur både våra rätter
+              och våra cocktails. Med inspiration från världens kök och en
+              passion för smak, kombinerar vi utsökta måltider med innovativa,
+              handgjorda drinkar. Låt dig förföras av vår signaturcocktail,
+              skapad för att harmoniera perfekt med vår mest populära rätt.
+              Oavsett om du söker en romantisk middag, en härlig kväll med
+              vänner eller bara något riktigt gott att njuta av – Olivia’s Bar
+              är platsen där alla smaker möts. Kom och upplev smakresan hos oss.
+              Olivia’s Bar – där mat och cocktails förenas i perfekt harmoni.
+            </p>
+          </div>
+        </div>
         <div className="m-2 flex flex-col items-center justify-center text-sm sm:flex-row">
           <div className="flex flex-row">
             <button
@@ -215,26 +236,20 @@ export default function Menu() {
           )}
         </Suspense>
 
-        <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
-          <div className="">
-            <h1 className="my-2 mb-2 text-center text-xl uppercase">Note:</h1>
-            <p className="my-6 mb-6 text-center text-sm uppercase">
-              Each Burger include 180g kött
+        <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl rounded-lg">
+          <div>
+            <h1 className="my-4 text-center text-xl uppercase italic font-bold bg-[#F7DAD0] text-black rounded-md">
+              Note:
+            </h1>
+            <p className="my-2 px-4 py-2 text-center italic text-xs bg-[#F7DAD0] text-black rounded-md shadow-md">
+              Each Burger includes 180g kött
             </p>
-            <p className="my-6 mb-6 text-center text-sm uppercase">
-              You have option to Choose Hallumni
+            <p className="my-2 px-4 py-2 text-center italic text-xs bg-[#F7DAD0] text-black rounded-md shadow-md">
+              You have the option to choose Halloumi
             </p>
-            <p className="my-6 mb-6 text-center text-sm uppercase">
-              Each Steak include 220g kött
+            <p className="my-2 px-4 py-2 text-center italic text-xs bg-[#F7DAD0] text-black rounded-md shadow-md">
+              Each Steak includes 220g kött
             </p>
-            {/* 
-                        <p className='mb-6 my-6 text-amber-100 text-sm text-center uppercase '>
-                            At Jay&apos;s, we offer two types of pizza bread to cater to your preferences. Italiensk Surdeg and Gluten-Free. <br /> <br />
-
-                            <span className='text-primary uppercase'>Italiensk Surdeg: </span>Italiensk Surdeg: This classic Italian sourdough bread is a favorite for its rich flavor and perfect crust. Please note, selecting this option will incur an additional charge of 15 kr.
-                            <br /><br /> <span className='text-primary uppercase'>Gluten-Free:</span> For those with dietary restrictions, our gluten-free pizza bread is an excellent choice. Please note, selecting this option will incur an additional charge of 20 kr.
-                            <br /><br />Additionally, we are pleased to offer gluten-free burger bread for our burger enthusiasts who need or prefer gluten-free options.</p>
-                    */}{" "}
           </div>
         </div>
 

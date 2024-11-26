@@ -63,24 +63,23 @@ export default function Deserts() {
         className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
       >
         {/* Price Button */}
-        <button className="absolute top-4 right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
+        <button className="absolute top-4 right-4 bg-black text-sm text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
           {desert.price}
         </button>
       
         {/* Dessert Image */}
         <img
-          /* src={desert.src.startsWith("/") ? desert.src : `/${desert.src}`} */
           src="olivia/des1.jpg"
           alt={desert.title}
           className="mx-auto mb-3 w-28 h-28 object-cover rounded-full shadow-sm"
         />
       
         {/* Dessert Title */}
-        <h4 className="font-semibold text-lg text-black mb-2">{desert.title}</h4>
+        <h4 className="font-semibold text-md text-black mb-2">{desert.title}</h4>
       
         {/* Description */}
-        <p className="text-sm text-gray-700">
-          {desert.description || "No description available"}
+        <p className="text-xs text-gray-700">
+          {desert.description || ""}
         </p>
       </div>
       

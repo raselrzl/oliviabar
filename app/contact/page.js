@@ -152,7 +152,7 @@ export default function ContactPage() {
                       id="name"
                       value={formData.name || ""}
                       onChange={handleChange}
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full rounded-sm h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     />
                     {errors.name && (
                       <p className="mt-1 text-xs text-red-500">{errors.name}</p>
@@ -171,7 +171,7 @@ export default function ContactPage() {
                       id="phoneNumber"
                       value={formData.phoneNumber || ""}
                       onChange={handleChange}
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     />
                     {errors.phoneNumber && (
                       <p className="mt-1 text-xs text-red-500">
@@ -196,7 +196,7 @@ export default function ContactPage() {
                       id="email"
                       value={formData.email || ""}
                       onChange={handleChange}
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     />
                     {errors.email && (
                       <p className="mt-1 text-xs text-red-500">
@@ -220,7 +220,7 @@ export default function ContactPage() {
                       maxLength={12} // Maximum length for the full format (YYYYMMDDXXXX)
                       pattern="\d{10}|\d{12}" // Ensures input is 10 or 12 digits
                       placeholder="YYYYMMDDXXXX"
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     />
                     {errors.personnummer && (
                       <p className="mt-1 text-xs text-red-500">
@@ -245,7 +245,7 @@ export default function ContactPage() {
                       id="date"
                       value={formData.date || ""}
                       onChange={handleChange}
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     />
                     {errors.date && (
                       <p className="mt-1 text-xs text-red-500">{errors.date}</p>
@@ -263,7 +263,7 @@ export default function ContactPage() {
                       id="time"
                       value={formData.time || ""}
                       onChange={handleChange}
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     >
                       <option value="">Select a time</option>
                       {generateTimeOptions().map((time, index) => (
@@ -289,7 +289,7 @@ export default function ContactPage() {
                       id="numPeople"
                       value={formData.numPeople || ""}
                       onChange={handleChange}
-                      className="mt-1 block w-full h-8 border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                      className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                       min="1"
                     />
                     {formData.numPeople > 8 && (
@@ -313,7 +313,7 @@ export default function ContactPage() {
                     id="message"
                     value={formData.message || ""}
                     onChange={handleChange}
-                    className="mt-1 block w-full border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    className="mt-1 block w-full rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                   />
                   {errors.message && (
                     <p className="mt-1 text-xs text-red-500">
@@ -327,7 +327,7 @@ export default function ContactPage() {
                   type="submit"
                   className={`w-full px-4 py-2 ${
                     showConfirmation ? "bg-black" : "bg-black"
-                  } text-[#EAC6B5] shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
+                  } text-[#EAC6B5] rounded-sm shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
                 >
                   Confirm Your Booking
                 </button>

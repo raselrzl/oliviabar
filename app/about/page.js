@@ -73,7 +73,7 @@ export default function AboutPage() {
         <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="flex flex-col items-center p-6 md:flex-row">
             <Image
-              src="/images/ourchef.avif"
+              src="/olivia/o1.jpg"
               alt="Our Chef"
               width={600}
               height={400}
@@ -95,7 +95,7 @@ export default function AboutPage() {
         <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="flex flex-col items-center p-6 md:flex-row">
             <Image
-              src="/images/ourteam.jpg"
+              src="/olivia/o3.jpg"
               alt="Our Team"
               width={600}
               height={400}
@@ -326,18 +326,10 @@ export default function AboutPage() {
       </section>
 
       <section id="info" className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
-        {/* Opening Hours Section */}
-        <div className="p-4 text-center">
-          <h2 className="mb-4 text-xl font-semibold uppercase text-black">
-            Öppettider
-          </h2>
-          <p className="text-xs text-black">Måndag - Torsdag: 15:00 - 22:00</p>
-          <p className="text-xs text-black">Fredag & Lördag: 15:00 - 01:00</p>
-          <p className="text-xs text-black">Söndag: 17:00 - 01:00</p>
-        </div>
+        
 
         {/* Work With Us Section */}
-        <div className="mt-6 p-4 text-center">
+        <div id="" className="mt-6 p-4 text-center">
           <h2 className="mb-4 text-xl font-semibold uppercase text-black">
             Jobba Med Oss
           </h2>

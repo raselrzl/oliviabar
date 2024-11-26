@@ -64,10 +64,10 @@ export default function Förätter() {
         Förätter.map((Förätte, index) => (
           <div
             key={index} // Use index as the key since there's no unique ID
-            className="relative rounded-lg bg-[#F7DAD0] p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg "
+            className="relative rounded-md bg-[#F7DAD0] p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg "
           >
             {/* Price Button */}
-            <button className="absolute right-4 top-4 rounded-lg bg-black px-3 py-1 font-medium text-[#EAC6B5] shadow-md hover:bg-[#D4A59A]">
+            <button className="absolute right-4 top-4 rounded-lg text-sm bg-black px-3 py-1 font-medium text-[#EAC6B5] shadow-md hover:bg-[#D4A59A]">
               {Förätte.price}
             </button>
 
@@ -79,13 +79,13 @@ export default function Förätter() {
             />
 
             {/* Pizza Title */}
-            <h4 className="mb-2 text-lg font-semibold text-black">
+            <h4 className="mb-2 text-md font-semibold text-black">
               {Förätte.title}
             </h4>
 
             {/* Description */}
-            <p className="text-sm text-gray-700 ">
-              {Förätte.description || "No description available"}
+            <p className="text-xs text-gray-700 ">
+              {Förätte.description || ""}
             </p>
           </div>
         ))

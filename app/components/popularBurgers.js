@@ -59,12 +59,12 @@ export default function PopularBurgers() {
       {burgers.map((burger, index) => (
         <div
         key={index} // Use index as the key since there's no unique ID
-        className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+        className="relative bg-[#F7DAD0] rounded-lg pt-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
       >
         {/* Price Button */}
-        <button className="absolute top-4 right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
+       {/*  <button className="absolute top-4 text-sm right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
           {burger.price}
-        </button>
+        </button> */}
       
         {/* Burger Image */}
         <img
@@ -74,7 +74,7 @@ export default function PopularBurgers() {
         />
       
         {/* Burger Title */}
-        <h4 className="font-semibold text-lg text-black mb-2">{burger.title}</h4>
+        <h4 className="font-semibold text-md text-black mb-2">{burger.title}</h4>
       
         {/* Description */}
         {/* <p className="text-sm text-gray-700">{burger.description || "No description available"}</p> */}

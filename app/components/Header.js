@@ -12,6 +12,7 @@ import { SlMusicTone } from "react-icons/sl";
 import { IoRestaurant } from "react-icons/io5";
 import { SiInformatica } from "react-icons/si";
 import { BiFoodMenu } from "react-icons/bi";
+import { IoMdContacts } from "react-icons/io";
 
 export default function Header() {
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -43,11 +44,18 @@ export default function Header() {
             className="rounded-full"
           />
         </Link>
-        {/* <div className="text-black whitespace-nowrap ml-20 animate-marquee">
-          <span className="text-xxs">
-            <Notification />
-          </span>
-        </div> */}
+        <div className="text-black whitespace-nowrap">
+          <Link href="/">
+          <Image
+            src="/images/olivias.png"
+            width={80}
+            height={80}
+            alt="OLIVIAS"
+          />
+        </Link>
+            {/* <Notification /> */}
+          
+        </div>
         <div className="relative">
           <div className="relative">
             <button onClick={toggleNav} className="block sm:hidden">
@@ -109,6 +117,20 @@ export default function Header() {
                 onClick={() => handleLinkClick("/contact")}
               >
               <IoRestaurant className="pt-1 text-xl"/>Bokning
+              </Link>
+
+
+
+              <Link
+                href={"/about#jobba"}
+                className={`text-[#EAC6B5] flex px-2 py-1/2 rounded-md transition-colors duration-300 ${
+                  isActive("/about#jobba")
+                    ? "bg-black text-[#EAC6B5]"
+                    : "text-black"
+                }`}
+                onClick={() => handleLinkClick("/about#jobba")}
+              >
+              <IoMdContacts className="pt-1 text-xl"/>Jobba Med Oss
               </Link>
               <Link
                 href={"/about#music"}
@@ -172,6 +194,18 @@ export default function Header() {
                 onClick={() => handleLinkClick("/contact")}
               >
                 <IoRestaurant /> Bokning
+              </Link>
+
+              <Link
+                href={"/about#jobba"}
+                className={`text-[#EAC6B5] flex  px-2 py-1 rounded-md transition-colors duration-300 ${
+                  isActive("/about#jobba")
+                    ? "bg-black text-[#EAC6B5]"
+                    : "text-black"
+                }`}
+                onClick={() => handleLinkClick("/about#jobba")}
+              >
+                <IoMdContacts className="pt-1 text-xl"/>Jobba Med Oss
               </Link>
               <Link
                 href={"/about#music"}

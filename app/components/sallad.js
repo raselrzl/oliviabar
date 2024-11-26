@@ -73,7 +73,7 @@ export default function Sallad() {
             className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
           >
             {/* Price Button */}
-            <button className="absolute top-4 right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
+            <button className="absolute top-4 text-sm right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
               {Salla.price}
             </button>
 
@@ -85,13 +85,13 @@ export default function Sallad() {
             />
 
             {/* Extra Title */}
-            <h4 className="font-semibold text-lg text-black mb-2">
+            <h4 className="font-semibold text-md text-black mb-2">
               {Salla.title}
             </h4>
 
             {/* Description */}
-            <p className="text-sm text-gray-700">
-              {Salla.description || "No description available"}
+            <p className="text-xs text-gray-700">
+              {Salla.description || ""}
             </p>
           </div>
         ))

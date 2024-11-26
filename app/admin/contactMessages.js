@@ -28,7 +28,7 @@ export default function ContactMessages() {
   return (
     <div className="my-10 mb-40 px-8">
       <div className="mb-10 flex justify-center">
-        <h1 className="text-2xl font-semibold text-black bg-white px-8 py-4 rounded-lg">
+        <h1 className="text-xl font-semibold text-white bg-black px-8 py-2 rounded-md">
           All Bookings
         </h1>
       </div>
