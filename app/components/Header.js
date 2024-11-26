@@ -43,11 +43,11 @@ export default function Header() {
             className="rounded-full"
           />
         </Link>
-        <div className="text-black whitespace-nowrap ml-20 animate-marquee">
+        {/* <div className="text-black whitespace-nowrap ml-20 animate-marquee">
           <span className="text-xxs">
             <Notification />
           </span>
-        </div>
+        </div> */}
         <div className="relative">
           <div className="relative">
             <button onClick={toggleNav} className="block sm:hidden">
