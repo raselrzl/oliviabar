@@ -1,8 +1,8 @@
 import RightArrow from "./RightArrow";
-import PopularPizzas from "./popularPizzas";
 import PopularBurgers from "./popularBurgers";
 import ImageSlider from "./ImageSlider";
 import Link from "next/link";
+import Bernmeny from "./Bernmeny";
 
 export default function HomePizza() {
   return (
@@ -40,7 +40,7 @@ export default function HomePizza() {
             </button>
           </div>
           <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
-            <PopularPizzas />
+            <Bernmeny />
           </div>
 
           <h1 className="mt-6 text-center text-2xl font-semibold text-black">

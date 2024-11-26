@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import LoadingSpinner from "../components/loading-spinner"; // Import the LoadingSpinner component
 import { BASE_API_URL } from "@/app/lib/utils";
 
-export default function PopularPizzas() {
+export default function Bernmeny() {
   const [pizzas, setPizzas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
