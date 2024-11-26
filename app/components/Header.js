@@ -46,18 +46,16 @@ export default function Header() {
         </Link>
         <div className="text-black whitespace-nowrap">
           <Link href="/">
-          <Image
-            src="/images/olivias.png"
-            width={80}
-            height={80}
-            alt="OLIVIAS"
-          />
-        </Link>
-            {/* <Notification /> */}
-          
+            <Image
+              src="/images/olivias.png"
+              width={80}
+              height={80}
+              alt="OLIVIAS"
+            />
+          </Link>
+          {/* <Notification /> */}
         </div>
-        <div className="relative">
-          <div className="relative">
+          <div className="">
             <button onClick={toggleNav} className="block sm:hidden">
               <GiHamburgerMenu className="text-black text-3xl" />
             </button>
@@ -96,7 +94,7 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/menu")}
               >
-               <BiFoodMenu className="pt-1 text-xl"/> Meny
+                <BiFoodMenu className="pt-1 text-xl" /> Meny
               </Link>
               <Link
                 href={"/about"}
@@ -105,7 +103,7 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about")}
               >
-                <SiInformatica className="pt-1 text-xl"/> Om oss
+                <SiInformatica className="pt-1 text-xl" /> Om oss
               </Link>
               <Link
                 href={"/contact"}
@@ -116,10 +114,9 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/contact")}
               >
-              <IoRestaurant className="pt-1 text-xl"/>Bokning
+                <IoRestaurant className="pt-1 text-xl" />
+                Bokning
               </Link>
-
-
 
               <Link
                 href={"/about#jobba"}
@@ -130,7 +127,8 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about#jobba")}
               >
-              <IoMdContacts className="pt-1 text-xl"/>Jobba Med Oss
+                <IoMdContacts className="pt-1 text-xl" />
+                Jobba Med Oss
               </Link>
               <Link
                 href={"/about#music"}
@@ -141,7 +139,7 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about#music")}
               >
-                <SlMusicTone className="pt-1 text-xl"/> Music
+                <SlMusicTone className="pt-1 text-xl" /> Music
               </Link>
               <Link
                 href={"/about#info"}
@@ -152,7 +150,8 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about#info")}
               >
-                <FaInfoCircle className="pt-1 text-xl"/>Info  
+                <FaInfoCircle className="pt-1 text-xl" />
+                Info
               </Link>
             </div>
 
@@ -173,7 +172,7 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/menu")}
               >
-                <BiFoodMenu className="pt-1 text-xl"/> Meny
+                <BiFoodMenu className="pt-1 text-xl" /> Meny
               </Link>
               <Link
                 href={"/about"}
@@ -182,7 +181,7 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about")}
               >
-                <SiInformatica className="pt-1 text-xl"/> Om oss
+                <SiInformatica className="pt-1 text-xl" /> Om oss
               </Link>
               <Link
                 href={"/contact"}
@@ -205,7 +204,8 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about#jobba")}
               >
-                <IoMdContacts className="pt-1 text-xl"/>Jobba Med Oss
+                <IoMdContacts className="pt-1 text-xl" />
+                Jobba Med Oss
               </Link>
               <Link
                 href={"/about#music"}
@@ -216,7 +216,7 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about#music")}
               >
-                <SlMusicTone className="pt-1 text-xl"/> Musik
+                <SlMusicTone className="pt-1 text-xl" /> Musik
               </Link>
               <Link
                 href={"/about#info"}
@@ -227,11 +227,12 @@ export default function Header() {
                 }`}
                 onClick={() => handleLinkClick("/about#info")}
               >
-                <FaInfoCircle className="pt-1 text-xl"/>Info
+                <FaInfoCircle className="pt-1 text-xl" />
+                Info
               </Link>
             </div>
           </div>
-        </div>
+        
       </div>
     </>
   );
