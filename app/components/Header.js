@@ -68,7 +68,7 @@ export default function Header() {
             ></div>
 
             <div
-              className={`fixed top-0 right-0 h-2/3 w-2/5 bg-[#EAC6B5] text-white transform transition-transform duration-300 z-20 ${
+              className={`fixed top-0 right-0 h-auto w-2/5 bg-[#EAC6B5] text-white transform transition-transform duration-300 z-20 ${
                 isNavVisible ? "translate-x-0" : "translate-x-full"
               } sm:hidden flex flex-col items-start p-6 gap-6`}
             >
