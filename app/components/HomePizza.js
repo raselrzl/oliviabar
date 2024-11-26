@@ -34,16 +34,16 @@ export default function HomePizza() {
             </Link>
           </div>
           <ImageSlider />
-          <div className="lg:m-14 mb-8 mt-8 flex items-center justify-center text-sm">
+          {/* <div className="lg:m-14 mb-8 mt-8 flex items-center justify-center text-sm">
             <button className="flex place-items-center items-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]">
               Our Current Popular Food
             </button>
-          </div>
-          <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+          </div> */}
+          {/* <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
             <Bernmeny />
-          </div>
+          </div> */}
 
-          <h1 className="mt-6 text-center text-2xl font-semibold text-black">
+          <h1 className="mt-10 text-center text-2xl font-semibold text-black">
             Slice & Sizzle: Where Every Tells a Tale of Taste!
           </h1>
           <div className="mt-10 flex items-center justify-center gap-4 text-sm">

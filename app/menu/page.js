@@ -24,19 +24,31 @@ export default function Menu() {
         <div className="m-2 flex flex-col items-center justify-center text-sm sm:flex-row">
           <div className="flex flex-row">
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "All" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "All"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
               onClick={() => handleCategoryChange("All")}
             >
               All
             </button>
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Förätter" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "Förätter"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
               onClick={() => handleCategoryChange("Förätter")}
             >
               Förätter
             </button>
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Varmrätter" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "Varmrätter"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
               onClick={() => handleCategoryChange("Varmrätter")}
             >
               Varmrätter
@@ -44,31 +56,47 @@ export default function Menu() {
           </div>
           <div className="flex flex-row">
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Sallad" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "Sallad"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
               onClick={() => handleCategoryChange("Sallad")}
             >
               Sallad
             </button>
 
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase  ${selectedCategory === "Deserts" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase  ${
+                selectedCategory === "Deserts"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
               onClick={() => handleCategoryChange("Deserts")}
             >
               Deserts
             </button>
             <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Drinks" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "Drinks"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
               onClick={() => handleCategoryChange("Drinks")}
             >
               Drinks
             </button>
-            <button
-              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Bernmeny" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
-              onClick={() => handleCategoryChange("Bernmeny")}
-            >
-              Bernmeny
-            </button>
           </div>
+          <button
+            className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+              selectedCategory === "Bernmeny"
+                ? "text-black"
+                : "bg-black text-[#EAC6B5]"
+            }`}
+            onClick={() => handleCategoryChange("Bernmeny")}
+          >
+            Bernmeny
+          </button>
         </div>
 
         <Suspense fallback={<LoadingSpinner />}>
@@ -135,6 +163,19 @@ export default function Menu() {
               <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
                 <Drinks />
               </div>
+
+              <div className="flex justify-center">
+                <button
+                  className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
+                  onClick={() => handleCategoryChange("Bernmeny")}
+                >
+                  Bernmeny
+                </button>
+              </div>
+
+              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+                <Bernmeny />
+              </div>
             </>
           )}
 
@@ -167,7 +208,7 @@ export default function Menu() {
             </div>
           )}
 
-{selectedCategory === "Bernmeny" && (
+          {selectedCategory === "Bernmeny" && (
             <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
               <Bernmeny />
             </div>
