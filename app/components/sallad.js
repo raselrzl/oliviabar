@@ -79,7 +79,7 @@ export default function Sallad() {
 
             {/* Extra Image */}
             <img
-              src={Salla.src.startsWith("/") ? extra.src : `/${extra.src}`}
+              src={Salla.src}
               alt={Salla.title}
               className="mx-auto mb-3 w-28 h-28 object-cover rounded-full shadow-sm"
             />
