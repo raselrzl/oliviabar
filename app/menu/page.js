@@ -8,6 +8,7 @@ const Deserts = lazy(() => import("../components/deserts"));
 const Sallad = lazy(() => import("../components/sallad"));
 const Förätter = lazy(() => import("../components/for"));
 const Drinks = lazy(() => import("../components/Drinks"));
+const Bernmeny = lazy(() => import("../components/Bernmeny"));
 
 export default function Menu() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -60,6 +61,12 @@ export default function Menu() {
               onClick={() => handleCategoryChange("Drinks")}
             >
               Drinks
+            </button>
+            <button
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${selectedCategory === "Bernmeny" ? "text-black" : "bg-black text-[#EAC6B5]"}`}
+              onClick={() => handleCategoryChange("Bernmeny")}
+            >
+              Bernmeny
             </button>
           </div>
         </div>
@@ -157,6 +164,12 @@ export default function Menu() {
           {selectedCategory === "Sallad" && (
             <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
               <Sallad />
+            </div>
+          )}
+
+{selectedCategory === "Bernmeny" && (
+            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <Bernmeny />
             </div>
           )}
         </Suspense>

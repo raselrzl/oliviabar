@@ -4,7 +4,7 @@ import LoadingSpinner from "../components/loading-spinner"; // Import the Loadin
 import { BASE_API_URL } from "@/app/lib/utils";
 
 export default function Bernmeny() {
-  const [pizzas, setPizzas] = useState([]);
+  const [Bernmeny, setBernmeny] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -20,19 +20,19 @@ export default function Bernmeny() {
         console.log("Fetched data:", data);
 
         if (Array.isArray(data)) {
-          const popularPizzasCategory = data.find(
-            (category) => category.category === "Popular Pizzas",
+          const BernmenyCategory = data.find(
+            (category) => category.category === "Bernmeny",
           );
-          console.log("Popular Pizzas category:", popularPizzasCategory);
+          console.log("Bernmeny category:", BernmenyCategory);
 
           if (
-            popularPizzasCategory &&
-            Array.isArray(popularPizzasCategory.items)
+            BernmenyCategory &&
+            Array.isArray(BernmenyCategory.items)
           ) {
-            setPizzas(popularPizzasCategory.items);
+            setBernmeny(BernmenyCategory.items);
           } else {
             throw new Error(
-              "Popular Pizzas category or items are missing or in wrong format",
+              "Bernmeny category or items are missing or in wrong format",
             );
           }
         } else {
@@ -67,31 +67,31 @@ export default function Bernmeny() {
 
   return (
     <>
-      {pizzas.length === 0 ? (
+      {Bernmeny.length === 0 ? (
         <div className="text-center text-gray-500">
-          No popular pizzas available
+          No Bernmeny available
         </div>
       ) : (
-        pizzas.map((pizza, index) => (
+        Bernmeny.map((Bernmen, index) => (
           <div
             key={index} // Use index as the key if there is no unique ID
             className="relative rounded-lg bg-[#F7DAD0] p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
           >
             {/* Price Button text-[#EAC6B5]*/}
             <button className="absolute right-4 top-4 rounded-lg bg-black px-3 py-1 font-medium text-[#EAC6B5] shadow-md hover:bg-[#D4A59A]">
-              {pizza.price}
+              {Bernmen.price}
             </button>
 
             {/* Pizza Image */}
             <img
-              src={pizza.src}
-              alt={pizza.title}
+              src={Bernmen.src}
+              alt={Bernmen.title}
               className="mx-auto mb-3 h-28 w-28 rounded-full object-cover shadow-sm"
             />
 
             {/* Pizza Title */}
             <h4 className="mb-2 text-lg font-semibold text-black">
-              {pizza.title}
+              {Bernmen.title}
             </h4>
 
             {/* Description */}

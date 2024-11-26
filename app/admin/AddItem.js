@@ -103,11 +103,11 @@ export default function AddItem() {
             </button>
             <button
               className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${
-                category === "Popular Pizzas" ? "bg-gray-400" : "bg-black"
+                category === "Bernmeny" ? "bg-gray-400" : "bg-black"
               }`}
-              onClick={() => handleCategoryClick("Popular Pizzas")}
+              onClick={() => handleCategoryClick("Bernmeny")}
             >
-              Popular Pizzas
+              Bernmeny
             </button>
             <button
               className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${
