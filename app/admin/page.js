@@ -118,7 +118,7 @@ export default function MenuItemsForm() {
                 onClick={() => setView('contactMessages')}
                 className='p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white bg-black mx-4 active:scale-95 active:bg-gray-800'
               >
-                View All Contact Messages
+                View Bookings
               </button>
               <button
                 onClick={() => setView('notification')}
