@@ -275,6 +275,7 @@ export default function ContactMessages() {
 
 
 import { useEffect, useState } from "react";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import LoadingSpinner from "../components/loading-spinner";
 
 export default function ContactMessages() {
@@ -286,8 +287,7 @@ export default function ContactMessages() {
       try {
         const response = await fetch("/api/contactMessages");
         const data = await response.json();
-        // Sort messages by time in descending order
-        data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)); // Sort messages by time
         setMessages(data);
       } catch (error) {
         console.log("Error fetching messages:", error);
@@ -333,7 +333,7 @@ export default function ContactMessages() {
     }
   };
 
-  if (loading) return <LoadingSpinner />; // Show spinner while loading
+  if (loading) return <LoadingSpinner />;
 
   return (
     <div className="my-10 mb-40 px-8">
@@ -357,7 +357,11 @@ export default function ContactMessages() {
             >
               <div className="mb-4 border-b border-gray-300 pb-3">
                 <h2 className="text-2xl font-semibold text-gray-800">{msg.name}</h2>
-                <p className="text-sm text-gray-600">{msg.email}</p>
+                <div className="flex items-center gap-2">
+                  <a href={`mailto:${msg.email}`} className="text-sm text-gray-600 flex items-center gap-1">
+                    <AiOutlineMail className="text-gray-600" /> {msg.email}
+                  </a>
+                </div>
                 <p className="text-md mt-2 font-medium text-gray-800">{msg.personnummer}</p>
               </div>
 
@@ -368,10 +372,14 @@ export default function ContactMessages() {
               </div>
 
               <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="rounded-lg bg-gray-50 p-4">
-                  <p className="text-sm text-gray-700">
-                    <strong>Phone Number:</strong> {msg.phoneNumber}
-                  </p>
+                <div className="rounded-lg bg-gray-50 p-4 flex items-center gap-2">
+                  <AiOutlinePhone className="text-blue-500" />
+                  <a
+                    href={`tel:${msg.phoneNumber}`}
+                    className="text-sm text-gray-700 hover:underline"
+                  >
+                    {msg.phoneNumber}
+                  </a>
                 </div>
 
                 <div className="rounded-lg bg-gray-50 p-4">
@@ -423,9 +431,10 @@ export default function ContactMessages() {
             </div>
           ))
         ) : (
-          <p className="text-center text-gray-700">No messages found.</p>
+          <p>No messages found.</p>
         )}
       </div>
     </div>
   );
 }
+
