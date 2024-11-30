@@ -1,5 +1,4 @@
 import RightArrow from "./RightArrow";
-import PopularBurgers from "./popularBurgers";
 import ImageSlider from "./ImageSlider";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -72,24 +71,23 @@ export default function HomePizza() {
           </Link>
         </div>
       </div>
-      <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-xs uppercase text-black shadow-2xl">
+      <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
         <div className="p-4 text-center">
-          <h2 className="mb-4 text-xl font-semibold uppercase text-black">
+          <h2 className="mb-4 text-xl font-semibold uppercase text-white">
             Öppettider
           </h2>
-          <p className="text-xs text-black">Måndag - Torsdag: 15:00 - 22:00</p>
-          <p className="text-xs text-black">Fredag & Lördag: 15:00 - 01:00</p>
-          <p className="text-xs text-black">Söndag: 17:00 - 01:00</p>
+          <p className="text-xs text-white">Tisdag - Lördag 16:00-01:00</p>
+          <p className="text-xs text-white">Söndag 17:00 - 01:00</p>
+          <p className="text-xs text-white">Måndag - Stängt</p>
         </div>
 
-        <h2 className="text-xl font-semibold">Plats</h2>
 
         <p>
           <a
             href="https://www.google.com/maps?q=Trädgårdsgatan3+602+24+Norrköping"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black underline inline-flex items-center gap-2"
+            className="text-white underline inline-flex items-center gap-2"
           >
             Trädgårdsgatan 3 <FaExternalLinkAlt className="text-xl" />
           </a>

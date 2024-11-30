@@ -3,6 +3,7 @@ import { useState, lazy, Suspense } from "react";
 import { Footer } from "../components/Footer";
 import LoadingSpinner from "../components/loading-spinner";
 import FranGrillen from "../components/FranGrill";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Varmrätter = lazy(() => import("../components/varm"));
 const Deserts = lazy(() => import("../components/deserts"));
@@ -110,26 +111,26 @@ export default function Menu() {
             </button>
           </div>
           <div className="flex">
-          <button
-            className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
-              selectedCategory === "Bernmeny"
-                ? "text-black"
-                : "bg-black text-[#EAC6B5]"
-            }`}
-            onClick={() => handleCategoryChange("Bernmeny")}
-          >
-            Bernmeny
-          </button>
-          <button
-            className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
-              selectedCategory === "grill"
-                ? "text-black"
-                : "bg-black text-[#EAC6B5]"
-            }`}
-            onClick={() => handleCategoryChange("grill")}
-          >
-            Från grill
-          </button>
+            <button
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "Bernmeny"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
+              onClick={() => handleCategoryChange("Bernmeny")}
+            >
+              Barn rätter
+            </button>
+            <button
+              className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+                selectedCategory === "grill"
+                  ? "text-black"
+                  : "bg-black text-[#EAC6B5]"
+              }`}
+              onClick={() => handleCategoryChange("grill")}
+            >
+              Från grill
+            </button>
           </div>
         </div>
 
@@ -186,7 +187,6 @@ export default function Menu() {
                 <FranGrillen />
               </div>
 
-              
               <div className="flex justify-center">
                 <button
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
@@ -205,7 +205,7 @@ export default function Menu() {
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
                   onClick={() => handleCategoryChange("Bernmeny")}
                 >
-                  Bernmeny
+                  Barn rätter
                 </button>
               </div>
 
@@ -269,22 +269,31 @@ export default function Menu() {
           )}
         </Suspense>
 
-        {/* <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl rounded-lg">
-          <div>
-            <h1 className="my-4 text-center text-xl uppercase italic font-bold bg-[#F7DAD0] text-black rounded-md">
-              Note:
-            </h1>
-            <p className="my-2 px-4 py-2 text-center italic text-xs bg-[#F7DAD0] text-black rounded-md shadow-md">
-              Each Burger includes 180g kött
-            </p>
-            <p className="my-2 px-4 py-2 text-center italic text-xs bg-[#F7DAD0] text-black rounded-md shadow-md">
-              You have the option to choose Halloumi
-            </p>
-            <p className="my-2 px-4 py-2 text-center italic text-xs bg-[#F7DAD0] text-black rounded-md shadow-md">
-              Each Steak includes 220g kött
-            </p>
+        <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
+          <h2 className="mb-4 text-xl font-semibold uppercase text-white">
+            Öppettider
+          </h2>
+          <div className="p-4 text-center  rounded-lg">
+            <p className="text-xs text-white">Tisdag - Lördag 16:00-01:00</p>
+            <p className="text-xs text-white">Söndag 17:00 - 01:00</p>
+            <p className="text-xs text-white">Måndag - Stängt</p>
           </div>
-        </div> */}
+
+          <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">
+            Plats
+          </h2>
+
+          <p className="mt-2">
+            <a
+              href="https://www.google.com/maps?q=Trädgårdsgatan3+602+24+Norrköping"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline inline-flex items-center gap-2"
+            >
+              Trädgårdsgatan 3 <FaExternalLinkAlt className="text-xl" />
+            </a>
+          </p>
+        </div>
 
         <Footer />
       </div>
