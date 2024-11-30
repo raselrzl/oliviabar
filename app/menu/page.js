@@ -28,7 +28,7 @@ export default function Menu() {
             Välkommen till <span className="">Olivia&apos;S Bar</span> – där
             smaker möts och magi skapas!
           </h1>
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-xs uppercase text-black shadow-2xl">
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
             <p className="">
               På Olivia’s Bar handlar det inte bara om mat och dryck – det
               handlar om en upplevelse där allt går hand i hand. Vår meny är

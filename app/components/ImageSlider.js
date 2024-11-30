@@ -73,7 +73,7 @@ export default function ImageSlider() {
             onClick={() => goToSlide(slideIndex)}
             className='text-2xl cursor-pointer'
           >
-            <p className={`w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex items-center justify-center text-white bg-[#EAC6B5] mx-1 mb-4 cursor-pointer hover:bg-[#EAC6B5] transition ${slideIndex === currentIndex ? 'bg-black' : ''} rounded-full text-xs md:text-sm lg:text-base`}>
+            <p className={`w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex items-center justify-center text-white bg-[#f8d8c9] mx-1 mb-4 cursor-pointer hover:bg-[#f8d8c9] transition ${slideIndex === currentIndex ? 'bg-black' : ''} rounded-full text-xs md:text-sm lg:text-base`}>
               {slideIndex + 1}
             </p>
           </div>

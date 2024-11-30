@@ -119,7 +119,7 @@ export default function ContactPage() {
     <>
       <div className="min-h-screen">
         <div className="px-6">{/* <ImageSlider /> */}</div>
-        <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-sm uppercase text-black shadow-2xl">
+        <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-sm uppercase text-black shadow-2xl">
           <div className="mb-8">
             <div
               className="relative mx-auto my-6 max-w-screen-lg bg-cover bg-center p-8 text-center text-sm uppercase text-black shadow-2xl"
@@ -142,7 +142,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-4 text-sm uppercase text-black shadow-2xl" >
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-4 text-sm uppercase text-black shadow-2xl" >
             <form onSubmit={handleSubmit} className="space-y-2">
               <>
                 {/* Full Name and Phone Number in one row for larger screens */}
@@ -342,7 +342,7 @@ export default function ContactPage() {
               </div>
             </form>
             {showConfirmation && (
-              <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+              <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
                 <p className="my-6 mb-6 text-center text-sm uppercase text-black">
                   Tack för din bokning! <br /> <br /> Din reservation har
                   mottagits och är initialt bekräftad. Vi återkommer till dig

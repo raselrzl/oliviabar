@@ -7,7 +7,7 @@ export default function HomePizza() {
   return (
     <section className="relative mb-24 px-6 lg:mx-20 lg:px-20">
       <div
-        className="relative flex items-center justify-center h-[25vh] min-h-[50vh] bg-[url('/olivia/o4.jpg')] bg-cover bg-center bg-no-repeat mx-auto my-6 max-w-screen-lg bg-[#EAC6B5]"
+        className="relative flex items-center justify-center h-[25vh] min-h-[50vh] bg-[url('/olivia/o4.jpg')] bg-cover bg-center bg-no-repeat mx-auto my-6 max-w-screen-lg bg-[#f8d8c9]"
         style={{ backgroundImage: "url('/olivia/o4.jpg')" }}
       >
         {/* Dark overlay */}
@@ -46,7 +46,7 @@ export default function HomePizza() {
       <h1 className="mt-8 text-center text-xl font-bold uppercase text-black">
         Välkommen till <span className="">Olivia&apos;S Bar</span>
       </h1>
-      <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-xs uppercase text-black shadow-2xl">
+      <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
         <p className="">
           På Olivia’s Bar kombinerar vi utsökta rätter med handgjorda cocktails
           för en oförglömlig upplevelse. Inspirerade av världens kök är vår meny
@@ -59,7 +59,7 @@ export default function HomePizza() {
       </div>
 
       <ImageSlider />
-      <div className="relative flex items-center justify-center h-[25vh] min-h-[25vh] bg-[url('/olivia/o1.jpg')] bg-cover bg-center bg-no-repeat mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] mt-6 lg:mt-16">
+      <div className="relative flex items-center justify-center h-[25vh] min-h-[25vh] bg-[url('/olivia/o1.jpg')] bg-cover bg-center bg-no-repeat mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] mt-6 lg:mt-16">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative flex h-full flex-col items-center justify-center p-6 text-center">
           <Link

@@ -44,7 +44,7 @@ export default function MenuItemsForm() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center bg-[#EAC6B5]">
+    <div className="flex flex-col items-center justify-center bg-[#f8d8c9]">
       <h1 className='text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black uppercase m-8'>
         Admin Page
       </h1>

@@ -5,7 +5,7 @@ import { MdAddCall } from "react-icons/md";
 export function Footer() {
   return (
     <>
-      <div className="fixed bottom-0 left-0 flex w-full justify-center gap-4 bg-[#EAC6B5] p-6 text-3xl text-black">
+      <div className="fixed bottom-0 left-0 flex w-full justify-center gap-4 bg-[#f8d8c9] p-6 text-3xl text-black">
         {/* <Link
           href="https://www.facebook.com/share/iMFqxRGCbBVw5X5b/"
           target="_blank"

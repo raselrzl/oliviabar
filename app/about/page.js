@@ -38,7 +38,7 @@ export default function AboutPage() {
     <div>
       <div className="mx-auto mb-4 max-w-7xl p-4 text-[#EAC6B5] sm:p-6 lg:p-8">
         {/* Introduction Section */}
-        <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+        <section className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="">
             {/*  <Image
                             src="/images/restaurant-interior.jpg"
@@ -70,7 +70,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Story Section */}
-        <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+        <section className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="flex flex-col items-center p-6 md:flex-row">
             <Image
               src="/olivia/o1.jpg"
@@ -92,7 +92,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Team Section */}
-        <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+        <section className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="flex flex-col items-center p-6 md:flex-row">
             <Image
               src="/olivia/o3.jpg"
@@ -114,7 +114,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Philosophy Section */}
-        <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+        <section className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="flex flex-col items-center p-6">
             <div className="flex w-full flex-col items-center md:flex-row">
               <div className="p-4 text-center md:ml-6 md:text-left">
@@ -199,7 +199,7 @@ export default function AboutPage() {
         </section>
 
         {/* Community Engagement Section */}
-        <section className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+        <section className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
           <div className="flex flex-col items-center p-6 md:flex-row">
             <Image
               src="/images/community-engagement-event.jpg"
@@ -226,7 +226,7 @@ export default function AboutPage() {
               Vad Våra Kunder Säger
             </h2>
             <div className="space-y-4">
-              <div className="relative mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+              <div className="relative mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
                 <p>
                   &apos;&apos;Bästa hamburgarna i staden! Smakerna är otroliga,
                   och servicen är alltid i toppklass.&apos;&apos;
@@ -235,7 +235,7 @@ export default function AboutPage() {
                   - Sarah M
                 </span>
               </div>
-              <div className="relative mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+              <div className="relative mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
                 <p>
                   &apos;&apos;Biffen besvikar aldrig. Hamburgarna är
                   fantastiska, och atmosfären är mysig.&apos;&apos;
@@ -325,7 +325,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="info" className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
+      <section id="info" className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
         
 
         {/* Work With Us Section */}

@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 flex px-4 lg:px-20  py-2 lg:py-6 mb-8 items-center justify-between bg-[#EAC6B5]">
+      <div className="fixed top-0 left-0 w-full z-50 flex px-4 lg:px-20  py-2 lg:py-6 mb-8 items-center justify-between bg-[#f8d8c9]">
         {" "}
         {/* Added fixed classes */}
         {/* <Link href="/">
@@ -51,7 +51,7 @@ export default function Header() {
               width={40}
               height={40}
               alt="OLIVIAS"
-              className="ml-2 mt-2"
+              className="ml-6 mt-2"
             />
           </Link>
           {/* <Notification /> */}
@@ -69,7 +69,7 @@ export default function Header() {
             ></div>
 
             <div
-              className={`fixed top-0 right-0 h-auto w-2/5 bg-[#EAC6B5] text-white transform transition-transform duration-300 z-20 ${
+              className={`fixed top-0 right-0 h-auto w-2/5 bg-[#f8d8c9] text-white transform transition-transform duration-300 z-20 ${
                 isNavVisible ? "translate-x-0" : "translate-x-full"
               } sm:hidden flex flex-col items-start p-6 gap-6`}
             >
