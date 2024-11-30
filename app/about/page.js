@@ -262,7 +262,7 @@ export default function AboutPage() {
         id="music"
       >
         {/* Top 10 Famous Songs Section */}
-        <div className="p-4 bg-opacity-50 bg-black rounded">
+        <div className="p-4  rounded">
           <h2 className="mb-4 text-xl font-semibold uppercase text-white flex items-center justify-center gap-2">
             <img className="w-40 h-40" src="/olivia/gif3.gif" alt="music gif" />
           </h2>

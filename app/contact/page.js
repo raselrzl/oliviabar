@@ -74,11 +74,12 @@ export default function ContactPage() {
           setFormData({
             name: "",
             email: "",
-            subject: "",
             message: "",
             phoneNumber: "",
             date: "",
             time: "",
+            numPeople:"",
+            personnummer:"",
           });
         } else {
           console.log("Failed to submit form");
@@ -119,22 +120,29 @@ export default function ContactPage() {
       <div className="min-h-screen">
         <div className="px-6">{/* <ImageSlider /> */}</div>
         <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-sm uppercase text-black shadow-2xl">
-          <div className="mb-10">
-            <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl">
-              <h1 className="text/black mb-4 text-center text-3xl font-bold uppercase">
-                Boka Ett Bord
+          <div className="mb-8">
+            <div
+              className="relative mx-auto my-6 max-w-screen-lg bg-cover bg-center p-8 text-center text-sm uppercase text-black shadow-2xl"
+              style={{ backgroundImage: "url('/olivia/o3.jpg')" }}
+            >
+              {/* Dark overlay on top */}
+              <div className="absolute inset-0 bg-black/50 h-1/2"></div>
+
+              {/* Content */}
+              <h1 className="relative text-white mb-4 text-center text-3xl font-bold uppercase">
+                Boka Bord
               </h1>
-              <p className="text-md text-center text-black lg:px-40">
+              <p className="relative text-md text-center text-white lg:px-40">
                 Redo att njuta av en utsökt måltid på Olivia's Bar? Säkra ditt
                 bord genom att boka hos oss! Oavsett om du planerar en speciell
                 kväll eller bara söker en bra plats att äta, är vi här för att
                 göra din upplevelse oförglömlig. Fyll i formuläret nedan, så
-                bekräftar vi din bokning så snart som möjligt.{" "}
+                bekräftar vi din bokning så snart som möjligt.
               </p>
             </div>
           </div>
 
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-sm uppercase text-black shadow-2xl">
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-4 text-sm uppercase text-black shadow-2xl" >
             <form onSubmit={handleSubmit} className="space-y-2">
               <>
                 {/* Full Name and Phone Number in one row for larger screens */}
@@ -142,7 +150,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Full Name
                     </label>
@@ -161,7 +169,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="phoneNumber"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Phone Number
                     </label>
@@ -186,7 +194,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Email
                     </label>
@@ -207,7 +215,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="personnummer"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Personnummer
                     </label>
@@ -235,7 +243,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="date"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Booking Date
                     </label>
@@ -254,7 +262,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="time"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Booking Time
                     </label>
@@ -279,7 +287,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="numPeople"
-                      className="block text-sm font-medium text-black"
+                      className="block text-sm font-bold text-black"
                     >
                       Number of People
                     </label>
@@ -304,7 +312,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-black"
+                    className="block text-sm font-bold text-black"
                   >
                     Message
                   </label>

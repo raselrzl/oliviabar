@@ -35,7 +35,7 @@ export default function Header() {
       <div className="fixed top-0 left-0 w-full z-50 flex px-4 lg:px-20  py-2 lg:py-6 mb-8 items-center justify-between bg-[#EAC6B5]">
         {" "}
         {/* Added fixed classes */}
-        <Link href="/">
+        {/* <Link href="/">
           <Image
             src="/images/olivialogo.jpg"
             width={30}
@@ -43,14 +43,15 @@ export default function Header() {
             alt="OLIVIAS"
             className="rounded-full"
           />
-        </Link>
+        </Link> */}
         <div className="text-black whitespace-nowrap">
           <Link href="/">
             <Image
-              src="/images/olivias.png"
-              width={80}
-              height={80}
+              src="/olivia/svart.png"
+              width={40}
+              height={40}
               alt="OLIVIAS"
+              className="ml-2 mt-2"
             />
           </Link>
           {/* <Notification /> */}

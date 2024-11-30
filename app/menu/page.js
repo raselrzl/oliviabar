@@ -41,8 +41,10 @@ export default function Menu() {
               Olivia’s Bar – där mat och cocktails förenas i perfekt harmoni.
             </p>
           </div>
+
+          <h1 className="text-red-900 font-bold">Meny Under development</h1>
         </div>
-        <div className="m-2 flex flex-col items-center justify-center text-sm sm:flex-row">
+       {/*  <div className="m-2 flex flex-col items-center justify-center text-sm sm:flex-row">
           <div className="flex flex-row">
             <button
               className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
@@ -251,7 +253,7 @@ export default function Menu() {
               Each Steak includes 220g kött
             </p>
           </div>
-        </div>
+        </div> */}
 
         <Footer />
       </div>
