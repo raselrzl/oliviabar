@@ -152,7 +152,7 @@ export default function ContactPage() {
                       htmlFor="name"
                       className="block text-sm font-bold text-black"
                     >
-                      Full Name
+                      Namn
                     </label>
                     <input
                       type="text"
@@ -171,7 +171,7 @@ export default function ContactPage() {
                       htmlFor="phoneNumber"
                       className="block text-sm font-bold text-black"
                     >
-                      Phone Number
+                      Telefonnummer
                     </label>
                     <input
                       type="text"
@@ -245,7 +245,7 @@ export default function ContactPage() {
                       htmlFor="date"
                       className="block text-sm font-bold text-black"
                     >
-                      Booking Date
+                      Bokning datum
                     </label>
                     <input
                       type="date"
@@ -264,7 +264,7 @@ export default function ContactPage() {
                       htmlFor="time"
                       className="block text-sm font-bold text-black"
                     >
-                      Booking Time
+                      Bokningstid
                     </label>
                     <select
                       name="time"
@@ -273,7 +273,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="mt-1 block w-full h-8 rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     >
-                      <option value="">Select a time</option>
+                      <option value="">Välj tid</option>
                       {generateTimeOptions().map((time, index) => (
                         <option key={index} value={time}>
                           {time}
@@ -289,7 +289,7 @@ export default function ContactPage() {
                       htmlFor="numPeople"
                       className="block text-sm font-bold text-black"
                     >
-                      Number of People
+                      Antal personer
                     </label>
                     <input
                       type="number"
@@ -314,7 +314,7 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="block text-sm font-bold text-black"
                   >
-                    Message
+                    Meddelande
                   </label>
                   <textarea
                     name="message"
@@ -337,7 +337,7 @@ export default function ContactPage() {
                     showConfirmation ? "bg-black" : "bg-black"
                   } text-[#EAC6B5] rounded-sm shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
                 >
-                  Confirm Your Booking
+                  Bekräfta din bokning
                 </button>
               </div>
             </form>

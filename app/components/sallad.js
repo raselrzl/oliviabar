@@ -63,23 +63,34 @@ export default function Sallad() {
     return null;
   }
   return (
-    <>
+    <div>
+      <p className="m-2 flex w-auto items-center justify-center rounded italic px-2 py-2 text-xs text-black">
+        (Pommes duchesse, primörer, tomat, broccoli och baconlindad sparris.
+        Serveras med handslagen bearnaisesås och kryddsmör.)
+      </p>
+      <p className="flex font-semibold items-center justify-start gap-2 rounded py-2 uppercase text-sm text-black">
+        Välj Mellan
+      </p>
+
       {Sallad.length === 0 ? (
         <div className="text-center">Not available.</div>
       ) : (
         Sallad.map((Salla, index) => (
-          <div
-            key={index}
-            className="my-2 max-w-screen-mdpb-2"
-           >
+          <div key={index} className="my-2 max-w-screen-mdpb-2">
             <div className="flex justify-between items-center">
-            <h2 className="text-lg font-semibold text-black">{Salla.title}</h2>
-            <span className="text-md font-bold text-gray-700">{Salla.price}</span>
+              <h2 className="text-lg font-semibold text-black">
+                *{Salla.title}
+              </h2>
+              <span className="text-md font-bold text-gray-700">
+                {Salla.price}
+              </span>
             </div>
-            <p className="mt-2 text-xs italic text-gray-600">{Salla.description || ""}</p>
+            <p className="mt-2 text-xs italic text-gray-600">
+              {Salla.description || ""}
+            </p>
           </div>
         ))
       )}
-    </>
+    </div>
   );
 }

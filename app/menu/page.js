@@ -2,6 +2,7 @@
 import { useState, lazy, Suspense } from "react";
 import { Footer } from "../components/Footer";
 import LoadingSpinner from "../components/loading-spinner";
+import FranGrillen from "../components/FranGrill";
 
 const Varmrätter = lazy(() => import("../components/varm"));
 const Deserts = lazy(() => import("../components/deserts"));
@@ -108,6 +109,7 @@ export default function Menu() {
               Fisk {/* in database fisk is drinks */}
             </button>
           </div>
+          <div className="flex">
           <button
             className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
               selectedCategory === "Bernmeny"
@@ -118,6 +120,17 @@ export default function Menu() {
           >
             Bernmeny
           </button>
+          <button
+            className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
+              selectedCategory === "grill"
+                ? "text-black"
+                : "bg-black text-[#EAC6B5]"
+            }`}
+            onClick={() => handleCategoryChange("grill")}
+          >
+            Från grill
+          </button>
+          </div>
         </div>
 
         <Suspense fallback={<LoadingSpinner />}>
@@ -149,7 +162,7 @@ export default function Menu() {
               </div>
               <div className="flex justify-center">
                 <button
-                  className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
+                  className="mt-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
                   onClick={() => handleCategoryChange("Sallad")}
                 >
                   HUSETS PLANKSTEK {/* in database as Sallad */}
@@ -160,18 +173,20 @@ export default function Menu() {
                 <Sallad />
               </div>
 
-              <div className="flex justify-center" id="Desert">
+              <div className="flex justify-center">
                 <button
-                  className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
-                  onClick={() => handleCategoryChange("Deserts")}
+                  className="mt-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
+                  onClick={() => handleCategoryChange("grill")}
                 >
-                  Deserts
+                  Från Grillen {/* in database as Sallad */}
                 </button>
               </div>
 
               <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
-                <Deserts />
+                <FranGrillen />
               </div>
+
+              
               <div className="flex justify-center">
                 <button
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
@@ -196,6 +211,18 @@ export default function Menu() {
 
               <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Bernmeny />
+              </div>
+              <div className="flex justify-center" id="Desert">
+                <button
+                  className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
+                  onClick={() => handleCategoryChange("Deserts")}
+                >
+                  Deserts
+                </button>
+              </div>
+
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+                <Deserts />
               </div>
             </>
           )}
@@ -226,6 +253,12 @@ export default function Menu() {
           {selectedCategory === "Sallad" && (
             <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Sallad />
+            </div>
+          )}
+
+          {selectedCategory === "grill" && (
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <FranGrillen />
             </div>
           )}
 
