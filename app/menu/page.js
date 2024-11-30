@@ -41,10 +41,8 @@ export default function Menu() {
               Olivia’s Bar – där mat och cocktails förenas i perfekt harmoni.
             </p>
           </div>
-
-          <h1 className="text-red-900 font-bold">Meny Under development</h1>
         </div>
-       {/*  <div className="m-2 flex flex-col items-center justify-center text-sm sm:flex-row">
+        <div className="m-2 flex flex-col items-center justify-center text-sm sm:flex-row">
           <div className="flex flex-row">
             <button
               className={`m-2 flex place-items-center items-center gap-2 rounded px-4 py-2 uppercase ${
@@ -133,7 +131,7 @@ export default function Menu() {
                   Förätter
                 </button>
               </div>
-              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Förätter />
               </div>
 
@@ -146,7 +144,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Varmrätter />
               </div>
               <div className="flex justify-center">
@@ -158,7 +156,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Sallad />
               </div>
 
@@ -171,7 +169,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Deserts />
               </div>
               <div className="flex justify-center">
@@ -183,7 +181,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Drinks />
               </div>
 
@@ -196,49 +194,49 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Bernmeny />
               </div>
             </>
           )}
 
           {selectedCategory === "Förätter" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Förätter />
             </div>
           )}
 
           {selectedCategory === "Varmrätter" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Varmrätter />
             </div>
           )}
 
           {selectedCategory === "Deserts" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Deserts />
             </div>
           )}
 
           {selectedCategory === "Drinks" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Drinks />
             </div>
           )}
           {selectedCategory === "Sallad" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Sallad />
             </div>
           )}
 
           {selectedCategory === "Bernmeny" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 px-6 md:grid-cols-3 lg:grid-cols-4 lg:px-10">
+            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Bernmeny />
             </div>
           )}
         </Suspense>
 
-        <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl rounded-lg">
+        {/* <div className="mx-auto my-6 max-w-screen-lg bg-[#EAC6B5] p-8 text-center text-sm uppercase text-black shadow-2xl rounded-lg">
           <div>
             <h1 className="my-4 text-center text-xl uppercase italic font-bold bg-[#F7DAD0] text-black rounded-md">
               Note:

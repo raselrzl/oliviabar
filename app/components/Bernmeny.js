@@ -74,30 +74,14 @@ export default function Bernmeny() {
       ) : (
         Bernmeny.map((Bernmen, index) => (
           <div
-            key={index} // Use index as the key if there is no unique ID
-            className="relative rounded-lg bg-[#F7DAD0] p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            {/* Price Button text-[#EAC6B5]*/}
-            <button className="absolute right-4 top-4 text-sm rounded-lg bg-black px-3 py-1 font-medium text-[#EAC6B5] shadow-md hover:bg-[#D4A59A]">
-              {Bernmen.price}
-            </button>
-
-            {/* Pizza Image */}
-            <img
-              src={Bernmen.src}
-              alt={Bernmen.title}
-              className="mx-auto mb-3 h-28 w-28 rounded-full object-cover shadow-sm"
-            />
-
-            {/* Pizza Title */}
-            <h4 className="mb-2 text-md font-semibold text-black">
-              {Bernmen.title}
-            </h4>
-
-            {/* Description */}
-           { <p className="text-xs text-gray-700">
-              {Bernmen.description || ""}
-            </p>}
+            key={index}
+            className="my-2 max-w-screen-mdpb-2"
+           >
+            <div className="flex justify-between items-center">
+            <h2 className="text-lg font-semibold text-black">{Bernmen.title}</h2>
+            <span className="text-md font-bold text-gray-700">{Bernmen.price}</span>
+            </div>
+            <p className="mt-2 text-xs italic text-gray-600">{Bernmen.description || ""}</p>
           </div>
         ))
       )}

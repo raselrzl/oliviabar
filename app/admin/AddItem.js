@@ -196,7 +196,7 @@ export default function AddItem() {
               />
             </div>
 
-            {category !== "Drinks" && category !== "Deserts" && (
+          {/*   {category !== "Drinks" && category !== "Deserts" && ( */}
               <div className="mb-4">
                 <label
                   className="block text-sm sm:text-base md:text-lg font-medium text-white"
@@ -212,7 +212,7 @@ export default function AddItem() {
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </div>
-            )}
+           {/*  )} */}
 
             <div className="mb-4">
               <label

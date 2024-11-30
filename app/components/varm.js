@@ -65,25 +65,14 @@ export default function Varmrätter() {
       ) : (
         Varmrätter.map((Varmrätte, index) => (
           <div
-            key={index} // Use index as the key since there's no unique ID
-            className="relative bg-[#F7DAD0] text-sm rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            <button className="absolute top-4 right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
-              {Varmrätte.price}
-            </button>
-            <img
-              src={Varmrätte.src}
-              alt={Varmrätte.title}
-              className="mx-auto mb-3 w-28 h-28 object-cover rounded-full shadow-sm"
-            />
-
-            <h4 className="font-semibold text-md text-black mb-2">
-              {Varmrätte.title}
-            </h4>
-
-            <p className="text-xs text-gray-700">
-              {Varmrätte.description || ""}
-            </p>
+            key={index}
+            className="my-2 max-w-screen-mdpb-2"
+           >
+            <div className="flex justify-between items-center">
+            <h2 className="text-lg font-semibold text-black">{Varmrätte.title}</h2>
+            <span className="text-md font-bold text-gray-700">{Varmrätte.price}</span>
+            </div>
+            <p className="mt-2 text-xs italic text-gray-600">{Varmrätte.description || ""}</p>
           </div>
         ))
       )}

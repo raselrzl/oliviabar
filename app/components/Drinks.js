@@ -65,33 +65,15 @@ export default function Drinks() {
       ) : (
         drinks.map((drink, index) => (
           <div
-            key={index} // Use index as the key if there is no unique ID
-            className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            {/* Price Button */}
-            <button className="absolute top-4 right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A] text-sm">
-              {drink.price}
-            </button>
-
-            {/* Drink Image */}
-            <Image
-              src="/olivia/pan.jpg"
-              alt="Pan"
-              width={112} // width in pixels
-              height={112} // height in pixels
-              className="mx-auto mb-3 object-cover rounded-full shadow-sm"
-            />
-
-            {/* Drink Title */}
-            <h4 className="font-semibold text-md text-black mb-2">
-              {drink.title}
-            </h4>
-
-            {/* Description */}
-            <p className="text-xs text-gray-700">
-              {drink.description || ""}
-            </p>
-          </div>
+        key={index}
+        className="my-2 max-w-screen-mdpb-2"
+       >
+        <div className="flex justify-between items-center">
+        <h2 className="text-lg font-semibold text-black">{drink.title}</h2>
+        <span className="text-md font-bold text-gray-700">{drink.price}</span>
+        </div>
+        <p className="mt-2 text-xs italic text-gray-600">{drink.description || ""}</p>
+      </div>
         ))
       )}
     </>

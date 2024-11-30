@@ -59,28 +59,14 @@ export default function Deserts() {
     <>
       {deserts.map((desert, index) => (
         <div
-        key={index} // Use index as the key since there's no unique ID
-        className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-      >
-        {/* Price Button */}
-        <button className="absolute top-4 right-4 bg-black text-sm text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
-          {desert.price}
-        </button>
-      
-        {/* Dessert Image */}
-        <img
-          src="olivia/des1.jpg"
-          alt={desert.title}
-          className="mx-auto mb-3 w-28 h-28 object-cover rounded-full shadow-sm"
-        />
-      
-        {/* Dessert Title */}
-        <h4 className="font-semibold text-md text-black mb-2">{desert.title}</h4>
-      
-        {/* Description */}
-        <p className="text-xs text-gray-700">
-          {desert.description || ""}
-        </p>
+        key={index}
+        className="my-2 max-w-screen-mdpb-2"
+       >
+        <div className="flex justify-between items-center">
+        <h2 className="text-lg font-semibold text-black">{desert.title}</h2>
+        <span className="text-md font-bold text-gray-700">{desert.price}</span>
+        </div>
+        <p className="mt-2 text-xs italic text-gray-600">{desert.description || ""}</p>
       </div>
       
       ))}

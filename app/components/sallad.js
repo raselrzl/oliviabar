@@ -69,30 +69,14 @@ export default function Sallad() {
       ) : (
         Sallad.map((Salla, index) => (
           <div
-            key={index} // Using index as key since there’s no unique ID
-            className="relative bg-[#F7DAD0] rounded-lg p-6 text-center shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-          >
-            {/* Price Button */}
-            <button className="absolute top-4 text-sm right-4 bg-black text-[#EAC6B5] font-medium py-1 px-3 rounded-lg shadow-md hover:bg-[#D4A59A]">
-              {Salla.price}
-            </button>
-
-            {/* Extra Image */}
-            <img
-              src={Salla.src}
-              alt={Salla.title}
-              className="mx-auto mb-3 w-28 h-28 object-cover rounded-full shadow-sm"
-            />
-
-            {/* Extra Title */}
-            <h4 className="font-semibold text-md text-black mb-2">
-              {Salla.title}
-            </h4>
-
-            {/* Description */}
-            <p className="text-xs text-gray-700">
-              {Salla.description || ""}
-            </p>
+            key={index}
+            className="my-2 max-w-screen-mdpb-2"
+           >
+            <div className="flex justify-between items-center">
+            <h2 className="text-lg font-semibold text-black">{Salla.title}</h2>
+            <span className="text-md font-bold text-gray-700">{Salla.price}</span>
+            </div>
+            <p className="mt-2 text-xs italic text-gray-600">{Salla.description || ""}</p>
           </div>
         ))
       )}
