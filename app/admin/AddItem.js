@@ -131,8 +131,9 @@ export default function AddItem() {
               }`}
               onClick={() => handleCategoryClick("Drinks")}
             >
-              Drinks
+              Fisk{/* in database fisk is drinks */}
             </button>
+          
           </div>
           <form
             className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl p-6 mb-12 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 overflow-hidden"

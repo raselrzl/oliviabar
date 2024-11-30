@@ -105,7 +105,7 @@ export default function Menu() {
               }`}
               onClick={() => handleCategoryChange("Drinks")}
             >
-              Drinks
+              Fisk {/* in database fisk is drinks */}
             </button>
           </div>
           <button
@@ -177,7 +177,7 @@ export default function Menu() {
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
                   onClick={() => handleCategoryChange("Drinks")}
                 >
-                  Drinks
+                  Fisk
                 </button>
               </div>
 
