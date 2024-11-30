@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 flex px-4 lg:px-20  py-2 lg:py-6 mb-8 items-center justify-between bg-[#f8d8c9]">
+      <div className="fixed top-0 left-0 w-full z-50 flex px-4 lg:px-20  py-2 lg:py-6 items-center justify-between bg-[#f8d8c9]">
         {" "}
         {/* Added fixed classes */}
         {/* <Link href="/">

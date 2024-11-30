@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Footer } from "../components/Footer";
 import { BASE_API_URL } from "@/app/lib/utils";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -119,10 +120,10 @@ export default function ContactPage() {
     <>
       <div className="min-h-screen">
         <div className="px-6">{/* <ImageSlider /> */}</div>
-        <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-sm uppercase text-black shadow-2xl">
+        <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-sm  text-black shadow-2xl">
           <div className="mb-8">
             <div
-              className="relative mx-auto my-6 max-w-screen-lg bg-cover bg-center p-8 text-center text-sm uppercase text-black shadow-2xl"
+              className="relative mx-auto my-6 max-w-screen-lg bg-cover bg-center p-8 text-center text-sm text-black shadow-2xl"
               style={{ backgroundImage: "url('/olivia/o3.jpg')" }}
             >
               {/* Dark overlay on top */}
@@ -354,6 +355,31 @@ export default function ContactPage() {
             )}
           </div>
         </div>
+        <div className="mx-auto mb-20 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
+        <h2 className="mb-4 text-xl font-semibold uppercase text-white">
+          Öppettider
+        </h2>
+        <div className="p-4 text-center  rounded-lg">
+          <p className="text-xs text-white">Tisdag - Lördag 16:00-01:00</p>
+          <p className="text-xs text-white">Söndag 17:00 - 01:00</p>
+          <p className="text-xs text-white">Måndag - Stängt</p>
+        </div>
+
+        <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">
+          Plats
+        </h2>
+
+        <p className="mt-2">
+          <a
+            href="https://www.google.com/maps?q=Trädgårdsgatan3+602+24+Norrköping"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline inline-flex items-center gap-2"
+          >
+            Trädgårdsgatan 3 <FaExternalLinkAlt className="text-xl" />
+          </a>
+        </p>
+      </div>
         <Footer />
       </div>
     </>

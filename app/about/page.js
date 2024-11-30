@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaExternalLinkAlt, FaInstagramSquare } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { SlMusicTone } from "react-icons/sl";
 
@@ -38,15 +38,7 @@ export default function AboutPage() {
     <div>
       <div className="mx-auto mb-4 max-w-7xl p-4 text-[#EAC6B5] sm:p-6 lg:p-8">
         {/* Introduction Section */}
-        <section className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
-          <div className="">
-            {/*  <Image
-                            src="/images/restaurant-interior.jpg"
-                            alt="Restaurant Interior"
-                            width={1200}
-                            height={400}
-                            className="w-full h-60 object-cover"
-                        /> */}
+        <section className="mx-auto max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
             <div className="">
               <h1 className="mb-4 text-3xl font-bold uppercase text-black">
                 Om oss – Olivia’s Bar
@@ -66,7 +58,6 @@ export default function AboutPage() {
                 samman.{" "}
               </p>
             </div>
-          </div>
         </section>
 
         {/* Our Story Section */}
@@ -325,9 +316,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="info" className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl">
-        
+      <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
+        <h2 className="mb-4 text-xl font-semibold uppercase text-white">
+          Öppettider
+        </h2>
+        <div className="p-4 text-center  rounded-lg">
+          <p className="text-xs text-white">Tisdag - Lördag 16:00-01:00</p>
+          <p className="text-xs text-white">Söndag 17:00 - 01:00</p>
+          <p className="text-xs text-white">Måndag - Stängt</p>
+        </div>
 
+        <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">
+          Plats
+        </h2>
+
+        <p className="mt-2">
+          <a
+            href="https://www.google.com/maps?q=Trädgårdsgatan3+602+24+Norrköping"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline inline-flex items-center gap-2"
+          >
+            Trädgårdsgatan 3 <FaExternalLinkAlt className="text-xl" />
+          </a>
+        </p>
+      </div>
+
+      <section
+        id="info"
+        className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-sm uppercase text-black shadow-2xl"
+      >
         {/* Work With Us Section */}
         <div id="" className="mt-6 p-4 text-center">
           <h2 className="mb-4 text-xl font-semibold uppercase text-black">
@@ -353,6 +371,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      
 
       <Footer />
     </div>
