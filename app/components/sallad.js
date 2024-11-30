@@ -65,7 +65,7 @@ export default function Sallad() {
   return (
     <>
       {Sallad.length === 0 ? (
-        <div className="text-center">No Sallad available.</div>
+        <div className="text-center">Not available.</div>
       ) : (
         Sallad.map((Salla, index) => (
           <div

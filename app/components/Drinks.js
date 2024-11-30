@@ -61,7 +61,7 @@ export default function Drinks() {
   return (
     <>
       {drinks.length === 0 ? (
-        <div className="text-center text-gray-500">No drinks available</div>
+        <div className="text-center text-gray-500">No available</div>
       ) : (
         drinks.map((drink, index) => (
           <div

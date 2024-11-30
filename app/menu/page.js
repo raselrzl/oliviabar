@@ -84,7 +84,7 @@ export default function Menu() {
               }`}
               onClick={() => handleCategoryChange("Sallad")}
             >
-              Sallad
+              HUSETS PLANKSTEK
             </button>
 
             <button
@@ -152,7 +152,7 @@ export default function Menu() {
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
                   onClick={() => handleCategoryChange("Sallad")}
                 >
-                  Sallad
+                  HUSETS PLANKSTEK {/* in database as Sallad */}
                 </button>
               </div>
 

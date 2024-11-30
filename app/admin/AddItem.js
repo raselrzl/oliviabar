@@ -99,7 +99,7 @@ export default function AddItem() {
               }`}
               onClick={() => handleCategoryClick("Sallad")}
             >
-              Sallad
+              HUSETS PLANKSTEK
             </button>
             <button
               className={`p-2 text-sm sm:text-base md:text-lg font-semibold uppercase rounded text-white ${
