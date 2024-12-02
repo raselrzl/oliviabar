@@ -3,6 +3,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { MdAddCall } from "react-icons/md";
 import { AiFillTikTok } from "react-icons/ai";
+import { FaSquareFacebook } from "react-icons/fa6";
 export function Footer() {
   return (
     <>
@@ -33,6 +34,13 @@ export function Footer() {
         </Link>
         <Link href="mailto:info@oliviasbar.se">
           <MdMarkEmailUnread className="hover:text-[#444444]" />
+        </Link>
+        <Link
+          href="https://www.facebook.com/share/1XLWtderer/?mibextid=LQQJ4d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaSquareFacebook className="hover:text-[#444444]" />
         </Link>
         
       </div>
