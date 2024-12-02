@@ -333,6 +333,32 @@ export default function ContactMessages() {
     }
   };
 
+
+
+  const deleteMessage = async (id) => {
+    try {
+      const response = await fetch("/api/contactMessages", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id }),
+      });
+
+      if (response.ok) {
+        setMessages((prev) => prev.filter((msg) => msg._id !== id)); // Remove deleted message from state
+        alert("Message deleted successfully!");
+      } else {
+        const { message } = await response.json();
+        console.error(message);
+        alert("Failed to delete message.");
+      }
+    } catch (error) {
+      console.error("Error deleting message:", error);
+      alert("An error occurred while deleting the message.");
+    }
+  };
+
   if (loading) return <LoadingSpinner />;
 
   return (
@@ -404,6 +430,13 @@ export default function ContactMessages() {
               </div>
 
               <div className="mt-4 flex items-center justify-between">
+
+              <button
+                  onClick={() => deleteMessage(msg._id)}
+                  className="rounded-md bg-gray-500 px-4 mr-2 py-1 text-white hover:bg-gray-600"
+                >
+                  Delete
+                </button>
                 {msg.confirmed ? (
                   <span className="text-green-600 font-semibold">Confirmed</span>
                 ) : msg.cancelled ? (
@@ -424,7 +457,7 @@ export default function ContactMessages() {
                     </button>
                   </div>
                 )}
-                <span className="text-xs text-gray-500">
+                <span className="text-xs mt-20 text-gray-500">
                   {new Date(msg.createdAt).toLocaleString()}
                 </span>
               </div>
