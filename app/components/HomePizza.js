@@ -76,9 +76,9 @@ export default function HomePizza() {
           <h2 className="mb-4 text-xl font-semibold uppercase text-white">
             Öppettider
           </h2>
-          <p className="text-xs text-white">Tisdag - Lördag 16:00-01:00</p>
-          <p className="text-xs text-white">Söndag 17:00 - 01:00</p>
-          <p className="text-xs text-white">Måndag - Stängt</p>
+          <p className="text-xs text-white">Tisdag - Fredag 16:00-01:00</p>
+          <p className="text-xs text-white">Söndag-Lördag 17:00 - 01:00</p>
+          <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
         </div>
 
 

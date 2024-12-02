@@ -360,9 +360,9 @@ export default function ContactPage() {
           Öppettider
         </h2>
         <div className="p-4 text-center  rounded-lg">
-          <p className="text-xs text-white">Tisdag - Lördag 16:00-01:00</p>
-          <p className="text-xs text-white">Söndag 17:00 - 01:00</p>
-          <p className="text-xs text-white">Måndag - Stängt</p>
+          <p className="text-xs text-white">Tisdag - Fredag 16:00-01:00</p>
+          <p className="text-xs text-white">Söndag-Lördag 17:00 - 01:00</p>
+          <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
         </div>
 
         <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">
