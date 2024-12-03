@@ -359,6 +359,35 @@ export default function ContactMessages() {
     }
   };
 
+
+  const sendEmail = async (recipientEmail, name) => {
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          recipientEmail,
+          subject: `Booking Confirmation for ${name}`,
+          messageBody: `Dear ${name},\n\nYour booking has been confirmed. Thank you for choosing our service.\n\nBest regards,\nYour Company`,
+        }),
+      });
+  
+      if (response.ok) {
+        alert('Email sent successfully!');
+      } else {
+        const { message } = await response.json();
+        console.error(message);
+        alert('Failed to send email.');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('An error occurred while sending the email.');
+    }
+  };
+  
+
   if (loading) return <LoadingSpinner />;
 
   return (
