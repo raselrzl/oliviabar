@@ -21,14 +21,14 @@ export default function Menu() {
   };
 
   return (
-    <div>
+    <div className="mx-6">
       <div className="pb-24">
         <div className="p-8">
           <h1 className="mb-4 text-center text-xl font-bold uppercase text-black">
             Välkommen till <span className="">Olivia&apos;S Bar</span> – där
             smaker möts och magi skapas!
           </h1>
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-6 text-center text-xs uppercase text-black shadow-2xl">
             <p className="">
               På Olivia’s Bar handlar det inte bara om mat och dryck – det
               handlar om en upplevelse där allt går hand i hand. Vår meny är
@@ -137,7 +137,7 @@ export default function Menu() {
         <Suspense fallback={<LoadingSpinner />}>
           {selectedCategory === "All" && (
             <>
-              <div className="flex justify-center">
+              <div className="flex justify-center ">
                 <button
                   className="m-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase text-[#EAC6B5]"
                   onClick={() => handleCategoryChange("Förätter")}
@@ -145,7 +145,7 @@ export default function Menu() {
                   Förätter
                 </button>
               </div>
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Förätter />
               </div>
 
@@ -158,7 +158,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Varmrätter />
               </div>
               <div className="flex justify-center">
@@ -170,7 +170,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Sallad />
               </div>
 
@@ -183,7 +183,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <FranGrillen />
               </div>
 
@@ -196,7 +196,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Drinks />
               </div>
 
@@ -209,7 +209,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Bernmeny />
               </div>
               <div className="flex justify-center" id="Desert">
@@ -221,7 +221,7 @@ export default function Menu() {
                 </button>
               </div>
 
-              <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+              <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
                 <Deserts />
               </div>
             </>
@@ -269,14 +269,56 @@ export default function Menu() {
           )}
         </Suspense>
 
+        <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
+          <h1 className="text-center text-3xl font-bold text-gray-800 mb-4">
+            Afterwork
+          </h1>
+          <p className="text-center text-lg text-gray-600 mb-8">
+            16:00 - 18:00 | 155 SEK
+          </p>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700">
+                Ryggbiffspasta
+              </h3>
+              <p className="text-gray-600">
+                Grädde, champinjoner, lök och färsk timjan.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700">
+                Planka Fläskfilé
+              </h3>
+              <p className="text-gray-600">
+                Pommes duchesse, primörer, tomat, broccoli och baconlindad
+                sparris. Serveras med handslagen bearnaisesås och kryddsmör.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700">
+                Olivias Burgare
+              </h3>
+              <p className="text-gray-600">
+                Cheddarost, bacon, hamburgerdressing, sallad, tomat & rödlök.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700">Fläskfilé</h3>
+              <p className="text-gray-600">
+                Med primörer, rödvinssky serveras med pommes frites.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
           <h2 className="mb-4 text-xl font-semibold uppercase text-white">
             Öppettider
           </h2>
           <div className="p-4 text-center  rounded-lg">
-          <p className="text-xs text-white">Tisdag - Fredag 16:00-01:00</p>
-          <p className="text-xs text-white">Lördag 15:00 - 01:00</p>
-          <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
+            <p className="text-xs text-white">Tisdag - Fredag 16:00-01:00</p>
+            <p className="text-xs text-white">Lördag 15:00 - 01:00</p>
+            <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
           </div>
 
           <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">

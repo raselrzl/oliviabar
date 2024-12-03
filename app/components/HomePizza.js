@@ -34,12 +34,12 @@ export default function HomePizza() {
 
           {/* Button */}
           <Link
-      href="/contact"
-      className="flex items-center gap-2 rounded-xl font-bold text-black px-4 py-2 uppercase bg-white"
-    >
-      Boka bord
-      <RightArrow />
-    </Link>
+            href="/contact"
+            className="flex items-center gap-2 rounded-xl font-bold text-black px-4 py-2 uppercase bg-white"
+          >
+            Boka bord
+            <RightArrow />
+          </Link>
         </div>
       </div>
 
@@ -71,6 +71,48 @@ export default function HomePizza() {
           </Link>
         </div>
       </div>
+      <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
+        <h1 className="text-center text-3xl font-bold text-gray-800 mb-4">
+          Afterwork
+        </h1>
+        <p className="text-center text-sm text-gray-600 mb-8">
+          16:00 - 18:00 | 155 SEK
+        </p>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700">
+              Ryggbiffspasta
+            </h3>
+            <p className="text-gray-600">
+              Grädde, champinjoner, lök och färsk timjan.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700">
+              Planka Fläskfilé
+            </h3>
+            <p className="text-gray-600">
+              Pommes duchesse, primörer, tomat, broccoli och baconlindad
+              sparris. Serveras med handslagen bearnaisesås och kryddsmör.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700">
+              Olivias Burgare
+            </h3>
+            <p className="text-gray-600">
+              Cheddarost, bacon, hamburgerdressing, sallad, tomat & rödlök.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700">Fläskfilé</h3>
+            <p className="text-gray-600">
+              Med primörer, rödvinssky serveras med pommes frites.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
         <div className="p-4 text-center">
           <h2 className="mb-4 text-xl font-semibold uppercase text-white">
@@ -80,7 +122,6 @@ export default function HomePizza() {
           <p className="text-xs text-white">Lördag 15:00 - 01:00</p>
           <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
         </div>
-
 
         <p>
           <a
