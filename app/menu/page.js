@@ -228,42 +228,42 @@ export default function Menu() {
           )}
 
           {selectedCategory === "Förätter" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Förätter />
             </div>
           )}
 
           {selectedCategory === "Varmrätter" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Varmrätter />
             </div>
           )}
 
           {selectedCategory === "Deserts" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Deserts />
             </div>
           )}
 
           {selectedCategory === "Drinks" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Drinks />
             </div>
           )}
           {selectedCategory === "Sallad" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Sallad />
             </div>
           )}
 
           {selectedCategory === "grill" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <FranGrillen />
             </div>
           )}
 
           {selectedCategory === "Bernmeny" && (
-            <div className="mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
+            <div className="shadow-2xl mx-auto grid max-w-screen-lg grid-cols-1 px-6 md:grid-cols-1 lg:grid-cols-1 lg:px-10">
               <Bernmeny />
             </div>
           )}
