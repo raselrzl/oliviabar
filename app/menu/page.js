@@ -23,12 +23,12 @@ export default function Menu() {
   return (
     <div className="mx-6">
       <div className="pb-24">
-        <div className="p-8">
+        <div className="p-2">
           <h1 className="mb-4 text-center text-xl font-bold uppercase text-black">
             Välkommen till <span className="">Olivia&apos;S Bar</span> – där
             smaker möts och magi skapas!
           </h1>
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-6 text-center text-xs uppercase text-black shadow-2xl">
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
             <p className="">
               På Olivia’s Bar handlar det inte bara om mat och dryck – det
               handlar om en upplevelse där allt går hand i hand. Vår meny är
