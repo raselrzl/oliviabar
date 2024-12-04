@@ -69,7 +69,7 @@ export default function ContactPage() {
           setShowConfirmation(true);
           setTimeout(() => {
             setShowConfirmation(false);
-          }, 3000);
+          }, 30000);
 
           // Clear the form data
           setFormData({
