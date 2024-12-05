@@ -79,8 +79,8 @@ export default function ContactPage() {
             phoneNumber: "",
             date: "",
             time: "",
-            numPeople:"",
-            personnummer:"",
+            numPeople: "",
+            personnummer: "",
           });
         } else {
           console.log("Failed to submit form");
@@ -143,7 +143,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-4 text-sm uppercase text-black shadow-2xl" >
+          <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-4 text-sm uppercase text-black shadow-2xl">
             <form onSubmit={handleSubmit} className="space-y-2">
               <>
                 {/* Full Name and Phone Number in one row for larger screens */}
@@ -315,13 +315,14 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="block text-sm font-bold text-black"
                   >
-                    Meddelande
+                    Särskilda önskemål
                   </label>
                   <textarea
                     name="message"
                     id="message"
                     value={formData.message || ""}
                     onChange={handleChange}
+                    placeholder="*Booking for Events *Booking for Food *Booking for Drinks"
                     className="mt-1 block w-full rounded-sm border-gray-300 p-2 text-black shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                   />
                   {errors.message && (
@@ -355,31 +356,55 @@ export default function ContactPage() {
             )}
           </div>
         </div>
-        <div className="mx-auto mb-20 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
-        <h2 className="mb-4 text-xl font-semibold uppercase text-white">
-          Öppettider
-        </h2>
-        <div className="p-4 text-center  rounded-lg">
-          <p className="text-xs text-white">Tisdag - Fredag 16:00-01:00</p>
-          <p className="text-xs text-white">Lördag 15:00 - 01:00</p>
-          <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
+
+        <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-4 text-sm uppercase text-black shadow-2xl">
+        <div className="flex justify-center">
+                <button
+                  className="mt-10 flex w-auto items-center justify-center gap-2 rounded bg-black px-4 py-2 uppercase font-semibold text-[#EAC6B5]"
+                >
+                  Boka event
+                </button>
+              </div>
+         <h3 className="mb-4 mt-4 text-center text-xl font-bold uppercase text-black">Skräddarsy din drömevent hos Olivias Bar </h3>
+         <p className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
+          På Olivias Bar erbjuder vi en
+          unik plats för ditt evenemang – oavsett om det handlar om en
+          konferens, födelsedagsfest eller en minnesvärd kväll med vänner och
+          kollegor. Vi hjälper dig att skapa en oförglömlig upplevelse, helt
+          anpassad efter dina önskemål. <br/> <br/> <br/> Från exklusiva menyer och dryckespaket
+          till perfekt stämning med rätt dekoration och underhållning – vi finns
+          här för att förvandla dina idéer till verklighet. Med vår personliga
+          service och passion för detaljer ser vi till att allt blir precis som
+          du tänkt dig – eller ännu bättre. <br/><br/>Låt oss göra din vision till
+          verklighet. Kontakta oss idag för att börja planera ditt skräddarsydda
+          evenemang!
+         </p>
         </div>
+        <div className="mx-auto mb-20 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
+          <h2 className="mb-4 text-xl font-semibold uppercase text-white">
+            Öppettider
+          </h2>
+          <div className="p-4 text-center  rounded-lg">
+            <p className="text-xs text-white">Tisdag - Fredag 16:00-01:00</p>
+            <p className="text-xs text-white">Lördag 15:00 - 01:00</p>
+            <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
+          </div>
 
-        <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">
-          Plats
-        </h2>
+          <h2 className="mt-6 text-xl font-semibold  inline-block px-4 py-2 rounded-lg text-white">
+            Plats
+          </h2>
 
-        <p className="mt-2">
-          <a
-            href="https://www.google.com/maps?q=Trädgårdsgatan3+602+24+Norrköping"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white underline inline-flex items-center gap-2"
-          >
-            Trädgårdsgatan 3 <FaExternalLinkAlt className="text-xl" />
-          </a>
-        </p>
-      </div>
+          <p className="mt-2">
+            <a
+              href="https://www.google.com/maps?q=Trädgårdsgatan3+602+24+Norrköping"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline inline-flex items-center gap-2"
+            >
+              Trädgårdsgatan 3 <FaExternalLinkAlt className="text-xl" />
+            </a>
+          </p>
+        </div>
         <Footer />
       </div>
     </>
