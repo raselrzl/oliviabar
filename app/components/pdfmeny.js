@@ -9,12 +9,12 @@ const DownloadPDF = () => {
         <div className="relative flex h-full flex-col items-center justify-center p-6 text-center">
           <a
             href="/olivia/Drinkmeny.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg text-black font-bold px-4 py-2 uppercase bg-white"
           >
             Drinkmeny <RightArrow />
           </a>
-          
         </div>
       </div>
     </div>
