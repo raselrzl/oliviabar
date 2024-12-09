@@ -2,6 +2,7 @@ import RightArrow from "./RightArrow";
 import ImageSlider from "./ImageSlider";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import DownloadPDF from "./pdfmeny";
 
 export default function HomePizza() {
   return (
@@ -71,6 +72,7 @@ export default function HomePizza() {
           </Link>
         </div>
       </div>
+      
       <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
         <h1 className="text-center text-3xl font-bold text-gray-800 mb-4">
           Afterwork
@@ -112,6 +114,11 @@ export default function HomePizza() {
           </div>
         </div>
       </div>
+
+
+
+
+      <DownloadPDF />
 
       <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
         <div className="p-4 text-center">

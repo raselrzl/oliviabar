@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import LoadingSpinner from "../components/loading-spinner";
 import FranGrillen from "../components/FranGrill";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import DownloadPDF from "../components/pdfmeny";
 
 const Varmrätter = lazy(() => import("../components/varm"));
 const Deserts = lazy(() => import("../components/deserts"));
@@ -268,7 +269,7 @@ export default function Menu() {
             </div>
           )}
         </Suspense>
-
+          <DownloadPDF />
         <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
           <h1 className="text-center text-3xl font-bold text-gray-800 mb-4">
             Afterwork
