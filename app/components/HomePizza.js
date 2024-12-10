@@ -118,7 +118,7 @@ export default function HomePizza() {
 
 
 
-      <DownloadPDF />
+      {/* <DownloadPDF /> */}
 
       <div className="mx-auto my-6 max-w-screen-lg bg-[url('/olivia/07.webp')] bg-cover bg-center p-8 text-center text-xs uppercase text-black shadow-2xl">
         <div className="p-4 text-center">

@@ -269,7 +269,7 @@ export default function Menu() {
             </div>
           )}
         </Suspense>
-          <DownloadPDF />
+          {/* <DownloadPDF /> */}
         <div className="mx-auto my-6 max-w-screen-lg bg-[#f8d8c9] p-8 text-center text-xs uppercase text-black shadow-2xl">
           <h1 className="text-center text-3xl font-bold text-gray-800 mb-4">
             Afterwork
