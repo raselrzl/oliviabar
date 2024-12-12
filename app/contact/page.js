@@ -385,8 +385,7 @@ export default function ContactPage() {
             Öppettider
           </h2>
           <div className="p-4 text-center  rounded-lg">
-          <p className="text-xs text-white">Tisdag 16:00-00:00</p>
-            <p className="text-xs text-white">Onsdag - Fredag 16:00 - 01:00</p>
+            <p className="text-xs text-white">Tisdag - Fredag 16:00 - 01:00</p>
             <p className="text-xs text-white">Lördag - 15:00 - 01:00</p>
             <p className="text-xs text-white">Söndag & Måndag - Stängt</p>
           </div>
