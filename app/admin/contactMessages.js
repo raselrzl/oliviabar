@@ -460,12 +460,12 @@ export default function ContactMessages() {
 
               <div className="mt-4 flex items-center justify-between">
 
-              <button
+              {/* <button
                   onClick={() => deleteMessage(msg._id)}
                   className="rounded-md bg-gray-500 px-4 mr-2 py-1 text-white hover:bg-gray-600"
                 >
                   Delete
-                </button>
+                </button> */}
                 {msg.confirmed ? (
                   <span className="text-green-600 font-semibold">Confirmed</span>
                 ) : msg.cancelled ? (
